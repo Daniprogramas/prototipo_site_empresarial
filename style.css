@@ -38,3 +38,26 @@ footer {
   padding: 10px;
   font-size: 14px;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+header.dark-mode {
+  background-color: #1f1f1f;
+}
+
+nav a.dark-mode {
+  color: #f0f0f0;
+}
+
+button.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+footer.dark-mode {
+  background-color: #1f1f1f;
+  color: #ccc;
+}
