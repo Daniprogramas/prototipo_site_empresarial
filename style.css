@@ -56,13 +56,14 @@ main {
 
 #conteudo h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px auto;
+  max-width: 600px;
 }
 
 #conteudo p {
   text-align: justify;
   margin: 15px auto;
-  max-width: 600px; 
+  max-width: 600px;
   line-height: 1.6;
 }
 
@@ -103,17 +104,6 @@ button:hover {
   background-color: #003060;
 }
 
-/* Listas */
-ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
 /* Tema escuro */
 .dark-mode {
   background-color: #222 !important;
@@ -143,32 +133,6 @@ li {
   background-color: #555 !important;
 }
 
-/* Seção de início com animações */
-.inicio {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.inicio p {
-  text-align: justify;
-  margin: 15px auto;
-  max-width: 800px;
-  line-height: 1.6;
-}
-
-/* Banner visual reservado */
-.banner-placeholder {
-  margin-top: 30px;
-  height: 200px;
-  background-color: #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-style: italic;
-}
-
 /* Animações suaves */
 .fade-in {
   opacity: 0;
@@ -188,6 +152,16 @@ li {
   }
 }
 
+/* Transição entre seções */
+.tab-content {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.tab-content.mostrar {
+  opacity: 1;
+}
+
 /* Responsividade básica */
 @media (max-width: 600px) {
   nav a {
@@ -197,5 +171,11 @@ li {
 
   button {
     width: 100%;
+  }
+
+  #conteudo h2,
+  #conteudo p,
+  #conteudo ul {
+    max-width: 90%;
   }
 }
