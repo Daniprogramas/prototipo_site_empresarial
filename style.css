@@ -48,6 +48,23 @@ nav a:hover {
   color: #ffcc00;
 }
 
+/* Botão de tema com emoji */
+#tema-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+#tema-btn:hover {
+  transform: scale(1.2);
+}
+
 /* Conteúdo principal */
 main {
   flex: 1;
@@ -88,7 +105,7 @@ footer {
   padding: 15px;
 }
 
-/* Botões */
+/* Botões padrão */
 button {
   background-color: #004080;
   color: white;
