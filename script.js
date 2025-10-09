@@ -1,6 +1,6 @@
 // Exibe alerta de contato
 function mostrarContato() {
-  alert("Entre em contato pelo e-mail: contato@danisoftweb.com");
+  alert("Entre em contato pelo e-mail: danielle.morais940@gmail.com");
 }
 
 function alternarTema() {
