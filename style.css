@@ -42,4 +42,5 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition
+  transition: color 0.3s ease; /* completa a transição */
+}
