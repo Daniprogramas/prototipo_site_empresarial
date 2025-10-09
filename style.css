@@ -88,14 +88,17 @@ main {
 }
 
 #conteudo ul {
+  max-width: 600px;
+  margin: 20px auto;
   padding-left: 20px;
-  margin-bottom: 20px;
+  text-align: justify;
 }
 
 #conteudo li {
   margin-bottom: 10px;
   line-height: 1.6;
 }
+
 
 /* Banner */
 .banner-placeholder {
