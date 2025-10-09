@@ -106,19 +106,20 @@ footer {
 }
 
 /* Botões padrão */
-button {
+#conteudo button {
+  display: block;
+  margin: 30px auto;
+  font-size: 16px;
+  padding: 10px 20px;
   background-color: #004080;
   color: white;
   border: none;
-  padding: 10px 20px;
-  margin-top: 20px;
-  font-size: 16px;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+#conteudo button:hover {
   background-color: #003060;
 }
 
