@@ -18,13 +18,15 @@ html {
 }
 
 .banner-placeholder img {
-  max-width: 100%;
+  width: 400px; /* imagem menor */
   height: auto;
-  border-radius: 8px;
-  opacity: 0;
-  animation: fadeIn 2s forwards;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
-
+.banner-placeholder img:hover {
+  transform: scale(1.02);
+}
 .fade-in {
   animation: fadeIn 2s ease-in-out forwards;
 }
