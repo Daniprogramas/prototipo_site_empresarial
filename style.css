@@ -66,6 +66,17 @@ main {
   line-height: 1.6;
 }
 
+#conteudo ul {
+  margin: 20px auto;
+  max-width: 600px;
+  padding-left: 20px;
+}
+
+#conteudo li {
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
 
 /* Rodapé */
 footer {
