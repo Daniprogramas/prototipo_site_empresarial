@@ -105,7 +105,7 @@ footer {
   padding: 15px;
 }
 
-/* Botões padrão */
+/* Botões dentro do conteúdo */
 #conteudo button {
   display: block;
   margin: 30px auto;
@@ -188,7 +188,7 @@ footer {
     margin: 5px 0;
   }
 
-  button {
+  button:not(#tema-btn) {
     width: 100%;
   }
 
