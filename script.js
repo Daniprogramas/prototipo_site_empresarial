@@ -3,14 +3,19 @@ function mostrarContato() {
   alert("Entre em contato pelo e-mail: contato@danisoftweb.com");
 }
 
-// Alterna entre tema claro e escuro
 function alternarTema() {
-  document.body.classList.toggle("dark-mode");
-  document.querySelector("header").classList.toggle("dark-mode");
-  document.querySelectorAll("nav a").forEach(el => el.classList.toggle("dark-mode"));
-  document.querySelectorAll("button").forEach(el => el.classList.toggle("dark-mode"));
-  document.querySelector("footer").classList.toggle("dark-mode");
+  const body = document.body;
+  const botao = document.getElementById("tema-btn");
+
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+    botao.textContent = "☀️"; // modo claro
+  } else {
+    botao.textContent = "🌙"; // modo escuro
+  }
 }
+
 
 function carregarSecao(secao) {
   fetch(`sections/${secao}.html`)
