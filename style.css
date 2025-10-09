@@ -62,9 +62,10 @@ main {
 #conteudo p {
   text-align: justify;
   margin: 15px auto;
-  max-width: 800px;
+  max-width: 600px; 
   line-height: 1.6;
 }
+
 
 /* Rodapé */
 footer {
