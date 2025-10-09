@@ -9,7 +9,7 @@
 <body>
   <header>
     <button onclick="alternarTema()">Alternar tema</button>
-    <h1>Empresa Exemplo</h1>
+    <h1>DaniSoft Web</h1>
     <nav>
       <a href="#">Início</a>
       <a href="#">Serviços</a>
@@ -21,13 +21,14 @@
   </header>
 
   <main>
-  <section id="inicio" class="hero">
+  <main>
+  <div class="tab-content" id="inicio">
     <h2>Bem-vindo à DaniSoft Web</h2>
     <p>Desenvolvimento web, automações e soluções digitais com foco em inovação e performance.</p>
     <button onclick="mostrarContato()">Fale conosco</button>
-  </section>
+  </div>
 
-  <section id="servicos">
+  <div class="tab-content" id="servicos" style="display:none;">
     <h2>Serviços</h2>
     <ul>
       <li>Criação de sites responsivos e modernos</li>
@@ -35,18 +36,19 @@
       <li>Integração de APIs e sistemas</li>
       <li>Consultoria em tecnologia e inovação</li>
     </ul>
-  </section>
+  </div>
 
-  <section id="sobre">
+  <div class="tab-content" id="sobre" style="display:none;">
     <h2>Sobre mim</h2>
     <p>Sou Dani, desenvolvedora apaixonada por transformar ideias em soluções digitais. Com experiência em HTML, CSS, JavaScript e Python, ajudo empresas e profissionais a se destacarem online com projetos personalizados e eficientes.</p>
-  </section>
+  </div>
 
-  <section id="contato">
+  <div class="tab-content" id="contato" style="display:none;">
     <h2>Contato</h2>
-    <p>Entre em contato pelo e-mail: danielle@danisoftweb.com</p>
-  </section>
+    <p>Entre em contato pelo e-mail: danielle.morais940@gmail.com</p>
+  </div>
 </main>
+
 
 <footer>
   <p>&copy; 2025 DaniSoft Web. Todos os direitos reservados.</p>
