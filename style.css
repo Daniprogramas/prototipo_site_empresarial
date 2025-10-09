@@ -44,16 +44,23 @@ nav {
 }
 
 nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s;
+  position: relative;
+  padding: 5px;
 }
 
-nav a:hover {
-  color: #ffcc00;
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffcc00;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 /* Botões */
