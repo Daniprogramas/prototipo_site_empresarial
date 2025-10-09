@@ -12,24 +12,20 @@ function alternarTema() {
   document.querySelector("footer").classList.toggle("dark-mode");
 }
 
-// Carrega conteúdo de uma seção externa na div #conteudo
 function carregarSecao(secao) {
-  const conteudo = document.getElementById("conteudo");
-  conteudo.classList.remove("mostrar");
-
   fetch(`sections/${secao}.html`)
-    .then(response => {
-      if (!response.ok) throw new Error(`Erro ao carregar a seção: ${secao}`);
-      return response.text();
-    })
+    .then(response => response.text())
     .then(html => {
+      const conteudo = document.getElementById("conteudo");
       conteudo.innerHTML = html;
-      setTimeout(() => conteudo.classList.add("mostrar"), 50);
+
+      // Aplica a classe de animação e estilo
+      conteudo.classList.remove("mostrar");
+      void conteudo.offsetWidth; // força reflow para reiniciar animação
+      conteudo.classList.add("tab-content", "mostrar");
     })
     .catch(error => {
-      conteudo.innerHTML = `<p style="color:red;">${error.message}</p>`;
-      conteudo.classList.add("mostrar");
-      console.error(error);
+      console.error("Erro ao carregar a seção:", secao, error);
     });
 }
 
