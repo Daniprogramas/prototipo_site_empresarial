@@ -1,27 +1,17 @@
-body {
-  font-family: 'Inter', sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
-
 /* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-#conteudo {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-#conteudo.mostrar {
-  opacity: 1;
+
+/* Tipografia e rolagem suave */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Corpo da página */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
   display: flex;
@@ -49,91 +39,7 @@ nav {
 nav a {
   position: relative;
   padding: 5px;
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  background-color: #ffcc00;
-  transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* Botões */
-button {
-  padding: 10px 20px;
-  background-color: #004080;
   color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #003060;
-}
-
-/* Conteúdo principal */
-main {
-  flex: 1;
-  padding: 40px 20px;
-}
-
-/* Área onde o conteúdo das seções aparece */
-.tab-content {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: justify;
-  padding: 20px;
-}
-
-/* Listas */
-ul {
-  list-style: disc;
-  padding-left: 20px;
-  margin-top: 10px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-/* Rodapé */
-footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-}
-
-/* Tema escuro */
-body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-header.dark-mode {
-  background-color: #1f1f1f;
-}
-
-nav a.dark-mode {
-  color: #f0f0f0;
-}
-
-button.dark-mode {
-  background-color: #333;
-  color: #f0f0f0;
-}
-
-footer.dark-mode {
-  background-color: #1f1f1f;
-  color: #ccc;
-}
+  text-decoration: none;
+  font-weight: bold;
+  transition
