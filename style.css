@@ -146,6 +146,14 @@ footer {
 }
 
 /* Tema escuro */
+/* Links no modo escuro */
+.dark-mode a {
+  color: #ffcc00; /* amarelo visível no fundo escuro */
+}
+
+.dark-mode a:hover {
+  color: #ffd633; /* tom mais claro no hover */
+}
 .dark-mode {
   background-color: #1e1e2f;
   color: #e0e0e0;
