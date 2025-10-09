@@ -15,9 +15,18 @@ function alternarTema() {
 // Carrega conteúdo de uma seção externa na div #conteudo
 function carregarSecao(secao) {
   fetch(`sections/${secao}.html`)
-    .then(response => response.text())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Erro ao carregar a seção: ${secao}`);
+      }
+      return response.text();
+    })
     .then(html => {
       document.getElementById("conteudo").innerHTML = html;
+    })
+    .catch(error => {
+      document.getElementById("conteudo").innerHTML = `<p style="color:red;">${error.message}</p>`;
+      console.error(error);
     });
 }
 
