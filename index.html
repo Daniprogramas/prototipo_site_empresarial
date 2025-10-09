@@ -11,49 +11,20 @@
     <button onclick="alternarTema()">Alternar tema</button>
     <h1>DaniSoft Web</h1>
     <nav>
-      <a href="#" onclick="mostrarAba('inicio')">Início</a>
-      <a href="#" onclick="mostrarAba('servicos')">Serviços</a>
-      <a href="#" onclick="mostrarAba('sobre')">Sobre</a>
-      <a href="#" onclick="mostrarAba('contato')">Contato</a>
+      <a href="#" onclick="carregarSecao('inicio')">Início</a>
+      <a href="#" onclick="carregarSecao('servicos')">Serviços</a>
+      <a href="#" onclick="carregarSecao('sobre')">Sobre</a>
+      <a href="#" onclick="carregarSecao('contato')">Contato</a>
     </nav>
-
-
   </header>
 
   <main>
-  <main>
-  <div class="tab-content" id="inicio">
-    <h2>Bem-vindo à DaniSoft Web</h2>
-    <p>Desenvolvimento web, automações e soluções digitais com foco em inovação e performance.</p>
-    <button onclick="mostrarContato()">Fale conosco</button>
-  </div>
+    <div id="conteudo" class="tab-content"></div>
+  </main>
 
-  <div class="tab-content" id="servicos" style="display:none;">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Criação de sites responsivos e modernos</li>
-      <li>Automação de tarefas com Python</li>
-      <li>Integração de APIs e sistemas</li>
-      <li>Consultoria em tecnologia e inovação</li>
-    </ul>
-  </div>
-
-  <div class="tab-content" id="sobre" style="display:none;">
-    <h2>Sobre mim</h2>
-    <p>Sou Dani, desenvolvedora apaixonada por transformar ideias em soluções digitais. Com experiência em HTML, CSS, JavaScript e Python, ajudo empresas e profissionais a se destacarem online com projetos personalizados e eficientes.</p>
-  </div>
-
-  <div class="tab-content" id="contato" style="display:none;">
-    <h2>Contato</h2>
-    <p>Entre em contato pelo e-mail: danielle.morais940@gmail.com</p>
-  </div>
-</main>
-
-
-<footer>
-  <p>&copy; 2025 DaniSoft Web. Todos os direitos reservados.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 DaniSoft Web. Todos os direitos reservados.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
