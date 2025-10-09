@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+#conteudo {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#conteudo.mostrar {
+  opacity: 1;
+}
 
 /* Corpo da página */
 body {
