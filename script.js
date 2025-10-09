@@ -1,7 +1,9 @@
+// Exibe alerta de contato
 function mostrarContato() {
   alert("Entre em contato pelo e-mail: contato@danisoftweb.com");
 }
 
+// Alterna entre tema claro e escuro
 function alternarTema() {
   document.body.classList.toggle("dark-mode");
   document.querySelector("header").classList.toggle("dark-mode");
@@ -10,7 +12,16 @@ function alternarTema() {
   document.querySelector("footer").classList.toggle("dark-mode");
 }
 
-function mostrarAba(id) {
-  document.querySelectorAll(".tab-content").forEach(el => el.style.display = "none");
-  document.getElementById(id).style.display = "block";
+// Carrega conteúdo de uma seção externa na div #conteudo
+function carregarSecao(secao) {
+  fetch(`sections/${secao}.html`)
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("conteudo").innerHTML = html;
+    });
 }
+
+// Carrega a seção "inicio" automaticamente ao abrir o site
+window.addEventListener("DOMContentLoaded", () => {
+  carregarSecao("inicio");
+});
