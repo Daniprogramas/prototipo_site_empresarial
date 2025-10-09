@@ -14,21 +14,25 @@ function alternarTema() {
 
 // Carrega conteúdo de uma seção externa na div #conteudo
 function carregarSecao(secao) {
+  const conteudo = document.getElementById("conteudo");
+  conteudo.classList.remove("mostrar");
+
   fetch(`sections/${secao}.html`)
     .then(response => {
-      if (!response.ok) {
-        throw new Error(`Erro ao carregar a seção: ${secao}`);
-      }
+      if (!response.ok) throw new Error(`Erro ao carregar a seção: ${secao}`);
       return response.text();
     })
     .then(html => {
-      document.getElementById("conteudo").innerHTML = html;
+      conteudo.innerHTML = html;
+      setTimeout(() => conteudo.classList.add("mostrar"), 50);
     })
     .catch(error => {
-      document.getElementById("conteudo").innerHTML = `<p style="color:red;">${error.message}</p>`;
+      conteudo.innerHTML = `<p style="color:red;">${error.message}</p>`;
+      conteudo.classList.add("mostrar");
       console.error(error);
     });
 }
+
 
 // Carrega a seção "inicio" automaticamente ao abrir o site
 window.addEventListener("DOMContentLoaded", () => {
