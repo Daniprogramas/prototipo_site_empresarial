@@ -38,6 +38,15 @@ footer {
   padding: 10px;
   font-size: 14px;
 }
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.tab-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 body.dark-mode {
   background-color: #121212;
