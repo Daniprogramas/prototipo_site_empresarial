@@ -6,6 +6,8 @@
 .dark-mode header,
 .dark-mode footer {
   background-color: #2c2c3c;
+  color: #e0e0e0;
+  border-top: 2px solid #444;
 }
 
 .dark-mode nav a {
@@ -39,7 +41,6 @@
   background-color: #505070;
 }
 
-/* Campos do formulário no modo escuro */
 .dark-mode .form-contato input,
 .dark-mode .form-contato textarea {
   background-color: #2c2c3c;
@@ -52,7 +53,7 @@
   color: #aaa;
 }
 
-/* Link do Instagram no modo escuro */
-.dark-mode .contato-info a[href*="instagram.com"] {
+.dark-mode .contato-info a[href*="instagram.com"],
+.dark-mode footer a[href*="instagram.com"] {
   color: #ff85d0;
 }
