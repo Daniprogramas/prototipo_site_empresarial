@@ -44,10 +44,15 @@
 .dark-mode .form-contato textarea {
   background-color: #2c2c3c;
   color: #e0e0e0;
-  border: 1px solid #555;
+  border: 1px solid #888;
 }
 
 .dark-mode .form-contato input::placeholder,
 .dark-mode .form-contato textarea::placeholder {
   color: #aaa;
+}
+
+/* Link do Instagram no modo escuro */
+.dark-mode .contato-info a[href*="instagram.com"] {
+  color: #ff85d0;
 }
