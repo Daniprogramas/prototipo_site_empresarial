@@ -1,2 +1,2 @@
-# prototipo_site_empresarial
-Protótipo para um site empresarial básico.
+# danisoft_web
+Portflolio em site de minha autoria com as técnicas de programação aplicadas.
