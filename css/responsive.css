@@ -1,0 +1,26 @@
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  #conteudo button {
+    width: 100%;
+  }
+
+  #tema-btn {
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+  }
+
+  #conteudo h2,
+  #conteudo p,
+  #conteudo ul {
+    max-width: 90%;
+  }
+
+  .banner-placeholder img {
+    max-width: 90%;
+  }
+}
