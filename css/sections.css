@@ -124,6 +124,47 @@
   background-color: #003060;
 }
 
+/* Estilo do formulário */
+.form-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.form-contato label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Botão de envio */
+.form-contato button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+  background-color: #003060;
+}
+
 /* Modo escuro */
 .dark-mode .form-contato input,
 .dark-mode .form-contato textarea {
@@ -136,6 +177,11 @@
   background-color: #3a3a5a;
   color: #e0e0e0;
 }
+
+.dark-mode .form-contato button:hover {
+  background-color: #505070;
+}
+
 
 .dark-mode .form-contato button:hover {
   background-color: #505070;
