@@ -24,28 +24,30 @@
   color: #ffd633;
 }
 
-.dark-mode #conteudo button {
+.dark-mode #conteudo h2 {
+  color: #ffffff;
+}
+
+.dark-mode #conteudo button,
+.dark-mode .form-contato button {
   background-color: #3a3a5a;
   color: #e0e0e0;
 }
 
-.dark-mode #conteudo button:hover {
+.dark-mode #conteudo button:hover,
+.dark-mode .form-contato button:hover {
   background-color: #505070;
 }
 
-/* Corrigindo campos do formulário no modo escuro */
-.dark-mode form input,
-.dark-mode form textarea {
+/* Campos do formulário no modo escuro */
+.dark-mode .form-contato input,
+.dark-mode .form-contato textarea {
   background-color: #2c2c3c;
   color: #e0e0e0;
   border: 1px solid #555;
 }
 
-.dark-mode form input::placeholder,
-.dark-mode form textarea::placeholder {
+.dark-mode .form-contato input::placeholder,
+.dark-mode .form-contato textarea::placeholder {
   color: #aaa;
-}
-
-.dark-mode #conteudo h2 {
-  color: #ffffff;
 }
