@@ -1,3 +1,7 @@
+function mostrarContato() {
+  alert("Entre em contato pelo e-mail: danielle.morais940@gmail.com");
+}
+
 function carregarSecao(secao) {
   fetch(`sections/${secao}.html`)
     .then(response => {
