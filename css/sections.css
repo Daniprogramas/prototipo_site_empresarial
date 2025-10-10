@@ -66,15 +66,28 @@
   background-color: #003060;
 }
 
+/* Contato */
+.contato-info {
+  margin: 20px 0;
+}
+
+.contato-info p {
+  margin-bottom: 10px;
+}
+
 /* Formulário de contato */
-form label {
+.form-contato {
+  margin-top: 20px;
+}
+
+.form-contato label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-form input,
-form textarea {
+.form-contato input,
+.form-contato textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -83,4 +96,19 @@ form textarea {
   font-size: 1rem;
   background-color: #fff;
   color: #333;
+}
+
+.form-contato button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+  background-color: #003060;
 }
