@@ -11,3 +11,8 @@ function fecharModal() {
     contato.scrollIntoView({ behavior: 'smooth' });
   }
 }
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    carregarSecao('inicio');
+  });
+</script>
