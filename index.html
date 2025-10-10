@@ -1,73 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>DaniSoft Web | Desenvolvimento Full Stack Profissional</title>
-
-  <!-- SEO básico -->
-  <meta name="description" content="Site profissional da DaniSoft Web, especializada em soluções digitais com HTML, CSS, JavaScript e Python.">
-  <meta name="keywords" content="DaniSoft Web, desenvolvimento web, portfólio, sites, APIs, landing page, full stack">
-  <meta name="author" content="Danielle Morais">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph para redes sociais -->
-  <meta property="og:title" content="DaniSoft Web">
-  <meta property="og:description" content="Soluções digitais com criatividade e eficiência.">
-  <meta property="og:url" content="https://seu-usuario.github.io/seu-repositorio/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-
-  <!-- Fonte Inter do Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/darkmode.css">
-  <link rel="stylesheet" href="css/animation.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DaniSoft Web</title>
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/darkmode.css" />
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <h1 class="logo">DaniSoft Web</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#" onclick="carregarSecao('inicio')">Início</a></li>
-          <li><a href="#" onclick="carregarSecao('servicos')">Serviços</a></li>
-          <li><a href="#" onclick="carregarSecao('sobre')">Sobre</a></li>
-          <li><a href="#" onclick="carregarSecao('contato')">Contato</a></li>
-        </ul>
-      </nav>
-      <button id="tema-btn" onclick="alternarTema()">🌙</button>
-    </div>
+    <h1 class="logo">DaniSoft Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="carregarSecao('inicio')">Início</a></li>
+        <li><a href="#" onclick="carregarSecao('servicos')">Serviços</a></li>
+        <li><a href="#" onclick="carregarSecao('sobre')">Sobre</a></li>
+        <li><a href="#" onclick="carregarSecao('contato')">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="tema-btn" onclick="alternarTema()">🌙</button>
   </header>
 
   <main>
-    <section id="banner">
-      <h2>Transformamos ideias em soluções digitais</h2>
-      <p>Desenvolvimento web completo com foco em performance, design e escalabilidade.</p>
-      <a href="#" class="cta-btn" onclick="carregarSecao('servicos')">Conheça nossos serviços</a>
-    </section>
-
-    <div id="conteudo" class="tab-content"></div>
+    <div id="conteudo"></div>
   </main>
 
+  <!-- ⬇️ Coloque o rodapé aqui -->
   <footer>
-    <div class="footer-info">
-      <p>&copy; 2025 DaniSoft Web. Todos os direitos reservados.</p>
-      <p>Email: contato@danisfotweb.com</p>
-      <p>Instagram: <a href="https://instagram.com/danisfotweb" target="_blank">@danisfotweb</a></p>
+    <p>&copy; 2025 DaniSoft Web. Todos os direitos reservados.</p>
+    <div class="social-links">
+      <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+      <a href="mailto:danielle.morais940@gmail.com">✉️ E-mail</a>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="js/tema.js" defer></script>
-  <script src="js/navegacao.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/tema.js"></script>
+  <script src="js/navegacao.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
