@@ -1,26 +1,37 @@
 @media (max-width: 600px) {
+  /* Navegação vertical */
   nav a {
     display: block;
-    margin: 5px 0;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 1rem;
   }
 
-  #conteudo button {
+  /* Botões ocupando largura total */
+  #conteudo button,
+  .cta-btn {
     width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
   }
 
+  /* Ícone de tema ajustado */
   #tema-btn {
     font-size: 20px;
     top: 10px;
     right: 10px;
   }
 
+  /* Texto e conteúdo centralizado */
   #conteudo h2,
   #conteudo p,
   #conteudo ul {
     max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .banner-placeholder img {
-    max-width: 90%;
-  }
-}
+  /* Imagens adaptadas */
+  .banner-placeholder img,
+  .foto-perfil {
+    max-width
