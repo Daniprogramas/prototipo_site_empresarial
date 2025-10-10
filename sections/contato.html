@@ -8,7 +8,7 @@
     <p class="delay-4">📍 <strong>Localização:</strong> Parnamirim, RN - Brasil</p>
   </div>
 
-  <form class="form-contato delay-5">
+  <form class="form-contato delay-5" action="https://formsubmit.co/danielle.morais940@gmail.com" method="POST">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
 
@@ -17,6 +17,9 @@
 
     <label for="mensagem">Mensagem:</label>
     <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://danisoftweb.com.br/obrigado.html">
 
     <button type="submit">Enviar mensagem</button>
   </form>
