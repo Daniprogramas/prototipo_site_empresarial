@@ -11,10 +11,6 @@
   color: #004080;
 }
 
-.dark-mode #conteudo h2 {
-  color: #ffffff;
-}
-
 #conteudo p {
   text-align: justify;
   margin-bottom: 15px;
@@ -53,8 +49,7 @@
   transform: scale(1.02);
 }
 
-#conteudo button,
-.cta-btn {
+#conteudo button {
   display: block;
   margin: 30px auto;
   font-size: 16px;
@@ -64,12 +59,28 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-#conteudo button:hover,
-.cta-btn:hover {
+#conteudo button:hover {
   background-color: #003060;
-  transform: scale(1.05);
 }
 
+/* Formulário de contato */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
