@@ -1,16 +1,29 @@
+/* Cabeçalho */
 header {
   background-color: #004080;
   color: white;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 
 header h1 {
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 
+/* Navegação */
 nav {
   margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -25,6 +38,7 @@ nav a:hover {
   color: #ffcc00;
 }
 
+/* Botão de tema */
 #tema-btn {
   position: fixed;
   top: 15px;
@@ -41,14 +55,22 @@ nav a:hover {
   transform: scale(1.2);
 }
 
+/* Conteúdo principal */
 main {
   flex: 1;
   padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/* Rodapé */
 footer {
   background-color: #004080;
   color: white;
   text-align: center;
   padding: 15px;
+  font-size: 0.9rem;
 }
+
+/* Responsividade básica */
+@media (max-width
