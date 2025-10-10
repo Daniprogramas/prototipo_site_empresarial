@@ -1,13 +1,17 @@
+/* Modo escuro geral */
 .dark-mode {
   background-color: #1e1e2f;
   color: #e0e0e0;
 }
 
+/* Cabeçalho e rodapé */
 .dark-mode header,
 .dark-mode footer {
   background-color: #2c2c3c;
+  color: #e0e0e0;
 }
 
+/* Navegação */
 .dark-mode nav a {
   color: #e0e0e0;
 }
@@ -16,6 +20,7 @@
   color: #ffcc00;
 }
 
+/* Links gerais */
 .dark-mode a {
   color: #ffcc00;
 }
@@ -24,11 +29,7 @@
   color: #ffd633;
 }
 
-.dark-mode #conteudo button {
-  background-color: #3a3a5a;
-  color: #e0e0e0;
-}
-
-.dark-mode #conteudo button:hover {
-  background-color: #505070;
-}
+/* Botões */
+.dark-mode button,
+.dark-mode .cta-btn {
+  background-color
