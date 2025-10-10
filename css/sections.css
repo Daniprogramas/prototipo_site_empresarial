@@ -1,19 +1,20 @@
-/* Área principal de conteúdo */
 #conteudo {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Títulos das seções */
 #conteudo h2 {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px auto;
   font-size: 1.8rem;
   color: #004080;
 }
 
-/* Parágrafos */
+.dark-mode #conteudo h2 {
+  color: #ffffff;
+}
+
 #conteudo p {
   text-align: justify;
   margin-bottom: 15px;
@@ -21,7 +22,6 @@
   font-size: 1rem;
 }
 
-/* Listas */
 #conteudo ul {
   max-width: 600px;
   margin: 20px auto;
@@ -35,7 +35,6 @@
   font-size: 1rem;
 }
 
-/* Imagem de destaque */
 .banner-placeholder {
   text-align: center;
   margin: 20px auto;
@@ -54,10 +53,33 @@
   transform: scale(1.02);
 }
 
-/* Botão de ação */
 #conteudo button,
 .cta-btn {
   display: block;
   margin: 30px auto;
   font-size: 16px;
-  padding
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#conteudo button:hover,
+.cta-btn:hover {
+  background-color: #003060;
+  transform: scale(1.05);
+}
+
+#conteudo a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#conteudo a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
