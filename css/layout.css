@@ -31,8 +31,8 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -103,7 +103,7 @@ footer .social-links a {
   display: inline-block;
 }
 
-/* Responsividade */
+/* Responsividade original */
 @media (max-width: 768px) {
   header h1.logo {
     font-size: 1.5rem;
