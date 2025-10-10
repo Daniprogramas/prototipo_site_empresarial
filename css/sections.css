@@ -1,19 +1,27 @@
+/* Área principal de conteúdo */
 #conteudo {
   max-width: 600px;
   margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
+/* Títulos das seções */
 #conteudo h2 {
   text-align: center;
   margin: 20px 0;
+  font-size: 1.8rem;
+  color: #004080;
 }
 
+/* Parágrafos */
 #conteudo p {
   text-align: justify;
   margin-bottom: 15px;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
+/* Listas */
 #conteudo ul {
   max-width: 600px;
   margin: 20px auto;
@@ -24,8 +32,10 @@
 #conteudo li {
   margin-bottom: 10px;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
+/* Imagem de destaque */
 .banner-placeholder {
   text-align: center;
   margin: 20px auto;
@@ -44,19 +54,10 @@
   transform: scale(1.02);
 }
 
-#conteudo button {
+/* Botão de ação */
+#conteudo button,
+.cta-btn {
   display: block;
   margin: 30px auto;
   font-size: 16px;
-  padding: 10px 20px;
-  background-color: #004080;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#conteudo button:hover {
-  background-color: #003060;
-}
+  padding
