@@ -1,8 +1,13 @@
-// Executa ao carregar o DOM
-window.addEventListener("DOMContentLoaded", () => {
-  // Carrega a seção inicial do site
-  carregarSecao("inicio");
+function abrirModal() {
+  document.getElementById('modal-obrigado').style.display = 'flex';
+}
 
-  // Futuras inicializações podem ser adicionadas aqui
-  // Exemplo: configurar animações, verificar tema salvo, etc.
-});
+function fecharModal() {
+  document.getElementById('modal-obrigado').style.display = 'none';
+
+  // Volta para a seção de contato
+  const contato = document.getElementById('contato');
+  if (contato) {
+    contato.scrollIntoView({ behavior: 'smooth' });
+  }
+}
