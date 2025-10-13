@@ -1,22 +1,21 @@
 /* Modo escuro */
 body.dark-mode {
-  background-color: #222222;
-  color: #ffffff;
+  background-color: #121212; /* fundo escuro real */
+  color: #f0f0f0;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Cabeçalho e rodapé no modo escuro */
 body.dark-mode header,
 body.dark-mode footer {
-  background-color: #001f40;
+  background-color: #00264d;
   color: white;
 }
 
 /* Links amarelos no modo escuro */
 body.dark-mode a,
 body.dark-mode nav a,
-body.dark-mode footer a,
-body.dark-mode .contato-info a[href*="instagram.com"] {
+body.dark-mode footer a {
   color: #ffcc00;
   transition: color 0.3s ease;
 }
