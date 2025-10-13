@@ -41,3 +41,15 @@ body.dark-mode h5,
 body.dark-mode h6 {
   color: white;
 }
+
+/* Link do Instagram no modo escuro */
+body.dark-mode .contato-info a[href*="instagram.com"] {
+  color: #ffcc00; /* amarelo */
+}
+
+/* Link do Instagram no modo claro */
+.contato-info a[href*="instagram.com"] {
+  color: #007bff; /* azul */
+  font-weight: bold;
+  text-decoration: underline;
+}
