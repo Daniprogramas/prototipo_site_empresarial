@@ -11,23 +11,18 @@
 </head>
 <body>
   <header>
-  <h1 class="logo">DaniSoft Web</h1>
-
-  <button id="menu-toggle" aria-label="Abrir menu">☰</button>
-
-  <nav id="menu">
-    <ul>
-      <li><a href="#" onclick="carregarSecao('inicio')">Início</a></li>
-      <li><a href="#" onclick="carregarSecao('servicos')">Serviços</a></li>
-      <li><a href="#" onclick="carregarSecao('modelos')">Modelos</a></li>
-      <li><a href="#" onclick="carregarSecao('sobre')">Sobre</a></li>
-      <li><a href="#" onclick="carregarSecao('contato')">Contato</a></li>
-    </ul>
-  </nav>
-
-  <button id="tema-btn" onclick="alternarTema()">🌙</button>
-</header>
-
+    <h1 class="logo">DaniSoft Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="carregarSecao('inicio')">Início</a></li>
+        <li><a href="#" onclick="carregarSecao('servicos')">Serviços</a></li>
+        <li><a href="#" onclick="carregarSecao('modelos')">Modelos</a></li>
+        <li><a href="#" onclick="carregarSecao('sobre')">Sobre</a></li>
+        <li><a href="#" onclick="carregarSecao('contato')">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="tema-btn" onclick="alternarTema()">🌙</button>
+  </header>
 
   <main>
     <div id="conteudo"></div>
@@ -40,3 +35,14 @@
       <a href="mailto:danielle.morais940@gmail.com">✉️ E-mail</a>
     </div>
   </footer>
+
+  <script src="js/tema.js"></script>
+  <script src="js/navegacao.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      carregarSecao('inicio');
+    });
+  </script>
+</body>
+</html>
