@@ -41,6 +41,18 @@ body.dark-mode h5,
 body.dark-mode h6 {
   color: #ffffff;
 }
+/* Títulos dentro do conteúdo no modo escuro */
+body.dark-mode #conteudo h2,
+body.dark-mode #conteudo h3,
+body.dark-mode #conteudo h4 {
+  color: #ffffff;
+}
+
+/* Borda branca no formulário de contato no modo escuro */
+body.dark-mode .form-contato input,
+body.dark-mode .form-contato textarea {
+  border: 2px solid #ffffff;
+}
 
 /* Campos de formulário no modo escuro */
 body.dark-mode input,
