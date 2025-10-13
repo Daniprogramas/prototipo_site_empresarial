@@ -5,23 +5,22 @@ html, body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  background-color: #f9f9fc;
-  color: #2c2c2c;
+  background-color: #ffffff;
+  color: #222222;
 }
 
 /* Cabeçalho */
 header {
-  background: linear-gradient(to right, #0055aa, #0077cc);
+  background-color: #004080;
   color: white;
   padding: 20px;
   text-align: center;
   width: 100%;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 header h1.logo {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 10px;
   font-weight: 600;
   color: white;
@@ -39,17 +38,15 @@ nav ul {
 }
 
 nav a {
-  padding: 6px 12px;
+  padding: 5px 10px;
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 400;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffaa00;
+  color: #ffcc00;
 }
 
 /* Botão de tema fixo */
@@ -64,6 +61,9 @@ nav a:hover {
   z-index: 1000;
   transition: transform 0.3s ease;
   color: white;
+  max-width: 50px;
+  max-height: 50px;
+  overflow: hidden;
 }
 
 #tema-btn:hover {
@@ -73,32 +73,28 @@ nav a:hover {
 /* Conteúdo principal */
 main {
   flex: 1;
-  padding: 30px;
+  padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
 
 /* Rodapé */
 footer {
-  background-color: #0055aa;
+  background-color: #004080;
   color: white;
   text-align: center;
   padding: 20px;
   font-size: 0.95rem;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
 }
 
 footer a {
-  color: #ffaa00;
+  color: #ffcc00;
   text-decoration: none;
   font-weight: bold;
 }
 
 footer a:hover {
-  color: #ffcc33;
+  color: #ffd633;
   text-decoration: underline;
 }
 
@@ -120,7 +116,7 @@ footer .social-links a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 9999;
   justify-content: center;
   align-items: center;
@@ -130,27 +126,8 @@ footer .social-links a {
   position: relative;
   width: 90%;
   max-width: 600px;
-  height: auto;
-  background-color: #ffffff;
-  border-radius: 12px;
+  height: 80%;
+  background-color: white;
+  border-radius: 10px;
   overflow: hidden;
-  padding: 30px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  animation: fadeIn 0.4s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 10000;
-}
+  box-shadow
