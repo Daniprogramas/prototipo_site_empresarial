@@ -10,6 +10,15 @@ body.dark-mode header,
 body.dark-mode footer {
   background-color: #1b263b; /* azul marinho elegante */
   color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fundo do conteúdo principal */
+body.dark-mode main {
+  background-color: #1e2a38; /* fundo interno mais escuro */
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(255,255,255,0.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Links no modo escuro */
