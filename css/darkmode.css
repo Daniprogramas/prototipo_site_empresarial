@@ -1,6 +1,6 @@
 /* Modo escuro */
 body.dark-mode {
-  background-color: #ffffff; /* fundo branco no modo escuro */
+  background-color: #black; /* fundo branco no modo escuro */
   color: #222222;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
