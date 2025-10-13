@@ -1,9 +1,5 @@
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
-  header h1.logo {
-    font-size: 1.5rem;
-  }
-
   #menu-toggle {
     display: block;
     font-size: 1.8rem;
@@ -13,7 +9,7 @@
     cursor: pointer;
     position: absolute;
     top: 20px;
-    right: 70px;
+    left: 20px; /* Agora o botão fica no canto esquerdo */
     z-index: 1000;
   }
 
@@ -21,7 +17,7 @@
     display: none;
     position: absolute;
     top: 70px;
-    right: 20px;
+    left: 20px; /* Menu aparece do lado esquerdo */
     background-color: #004080;
     border-radius: 8px;
     padding: 10px;
@@ -42,6 +38,7 @@
     padding: 10px;
     color: white;
   }
+
 
   #tema-btn {
     font-size: 20px;
