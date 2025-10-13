@@ -13,11 +13,6 @@ function fecharModal() {
   }
 }
 
-// Menu responsivo (hambúrguer)
-document.getElementById('menu-toggle').addEventListener('click', function () {
-  const menu = document.getElementById('menu');
-  menu.classList.toggle('show');
-});
 
 // Carregar seção de início automaticamente ao abrir o site
 window.addEventListener('DOMContentLoaded', function () {
