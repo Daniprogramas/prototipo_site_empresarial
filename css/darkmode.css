@@ -1,6 +1,6 @@
 /* Modo escuro */
 body.dark-mode {
-  background-color: #black; /* fundo branco no modo escuro */
+  background-color: #ffffff; /* fundo branco no modo escuro */
   color: #222222;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -28,10 +28,5 @@ body.dark-mode footer a:hover {
 
 /* Botão de tema no modo escuro */
 body.dark-mode #tema-btn {
-  color: #ffcc00;
-}
-
-/* Link do Instagram no modo escuro */
-body.dark-mode .contato-info a[href*="instagram.com"] {
   color: #ffcc00;
 }
