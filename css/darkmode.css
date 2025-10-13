@@ -30,3 +30,13 @@ body.dark-mode footer a:hover {
 body.dark-mode #tema-btn {
   color: #ffcc00;
 }
+
+/* Títulos no modo escuro */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: white;
+}
