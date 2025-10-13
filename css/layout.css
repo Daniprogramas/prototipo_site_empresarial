@@ -7,6 +7,7 @@ html, body {
   box-sizing: border-box;
   background-color: #ffffff;
   color: #222222;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Cabeçalho */
@@ -42,7 +43,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: 400;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -59,7 +60,7 @@ nav a:hover {
   font-size: 24px;
   cursor: pointer;
   z-index: 1000;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   color: white;
   max-width: 50px;
   max-height: 50px;
@@ -78,6 +79,18 @@ main {
   margin: 0 auto;
 }
 
+/* Suavidade na entrada do conteúdo */
+#conteudo {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#conteudo.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Rodapé */
 footer {
   background-color: #004080;
@@ -91,6 +104,7 @@ footer a {
   color: #ffcc00;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 footer a:hover {
