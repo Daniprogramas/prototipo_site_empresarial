@@ -1,14 +1,14 @@
 /* Modo escuro */
 body.dark-mode {
-  background-color: #ffffff; /* fundo branco no modo escuro */
-  color: #222222;
+  background-color: #121212; /* fundo escuro real */
+  color: #f0f0f0;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Cabeçalho e rodapé no modo escuro */
 body.dark-mode header,
 body.dark-mode footer {
-  background-color: #004080;
+  background-color: #00264d;
   color: white;
 }
 
