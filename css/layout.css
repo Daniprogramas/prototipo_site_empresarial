@@ -42,6 +42,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: 400;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -58,10 +59,15 @@ nav a:hover {
   font-size: 24px;
   cursor: pointer;
   z-index: 1000;
+  transition: transform 0.3s ease;
   color: white;
   max-width: 50px;
   max-height: 50px;
   overflow: hidden;
+}
+
+#tema-btn:hover {
+  transform: scale(1.2);
 }
 
 /* Conteúdo principal */
@@ -135,4 +141,5 @@ footer .social-links a {
   background: none;
   border: none;
   cursor: pointer;
-  z-index
+  z-index: 10000;
+}
