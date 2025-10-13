@@ -1,6 +1,6 @@
-/* Modo escuro */
+/* Modo escuro geral */
 body.dark-mode {
-  background-color: #121212; /* fundo escuro real */
+  background-color: #0d1b2a; /* azul petróleo escuro */
   color: #e0e0e0; /* texto claro */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -8,7 +8,7 @@ body.dark-mode {
 /* Cabeçalho e rodapé no modo escuro */
 body.dark-mode header,
 body.dark-mode footer {
-  background-color: #1f1f1f;
+  background-color: #1b263b; /* azul marinho elegante */
   color: #ffffff;
 }
 
@@ -38,38 +38,27 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
-body.dark-mode h6 {
+body.dark-mode h6,
+body.dark-mode #conteudo h2 {
   color: #ffffff;
-}
-/* Títulos dentro do conteúdo no modo escuro */
-body.dark-mode #conteudo h2,
-body.dark-mode #conteudo h3,
-body.dark-mode #conteudo h4 {
-  color: #ffffff;
-}
-
-/* Borda branca no formulário de contato no modo escuro */
-body.dark-mode .form-contato input,
-body.dark-mode .form-contato textarea {
-  border: 2px solid #ffffff;
 }
 
 /* Campos de formulário no modo escuro */
 body.dark-mode input,
 body.dark-mode textarea {
-  background-color: #1e1e1e;
+  background-color: #1e2a38;
   color: #ffffff;
-  border: 1px solid #444;
+  border: 1px solid #ffffff; /* borda branca pra destacar */
 }
 
 /* Botões no modo escuro */
 body.dark-mode button,
 body.dark-mode .form-contato button {
-  background-color: #333;
+  background-color: #2e3c54;
   color: #fff;
 }
 
 body.dark-mode button:hover,
 body.dark-mode .form-contato button:hover {
-  background-color: #444;
+  background-color: #3e4c64;
 }
