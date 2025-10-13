@@ -15,8 +15,7 @@ body.dark-mode footer {
 /* Links amarelos no modo escuro */
 body.dark-mode a,
 body.dark-mode nav a,
-body.dark-mode footer a,
-body.dark-mode a:visited {
+body.dark-mode footer a {
   color: #ffcc00;
   transition: color 0.3s ease;
 }
@@ -32,24 +31,7 @@ body.dark-mode #tema-btn {
   color: #ffcc00;
 }
 
-/* Títulos no modo escuro */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6 {
-  color: white;
-}
-
 /* Link do Instagram no modo escuro */
 body.dark-mode .contato-info a[href*="instagram.com"] {
-  color: #ffcc00; /* amarelo */
-}
-
-/* Link do Instagram no modo claro */
-.contato-info a[href*="instagram.com"] {
-  color: #007bff; /* azul */
-  font-weight: bold;
-  text-decoration: underline;
+  color: #ffcc00;
 }
