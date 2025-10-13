@@ -75,12 +75,13 @@
   margin-bottom: 10px;
 }
 
-/* Link do Instagram mais visível */
+/* Link do Instagram no modo claro */
 .contato-info a[href*="instagram.com"] {
-  color: #d6249f;
+  color: #007bff; /* azul */
   font-weight: bold;
   text-decoration: underline;
 }
+
 
 /* Formulário de contato */
 .form-contato {
