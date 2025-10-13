@@ -11,6 +11,10 @@ function fecharModal() {
     contato.scrollIntoView({ behavior: 'smooth' });
   }
 }
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('show');
+});
 <script>
   window.addEventListener('DOMContentLoaded', function () {
     carregarSecao('inicio');
