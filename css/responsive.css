@@ -1,62 +1,61 @@
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  #menu-toggle {
-    display: block;
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px; /* Agora o botão fica no canto esquerdo */
-    z-index: 1000;
-  }
-
-  nav {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 20px; /* Menu aparece do lado esquerdo */
-    background-color: #004080;
-    border-radius: 8px;
-    padding: 10px;
-    z-index: 999;
-  }
-
-  nav.show {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav a {
-    display: block;
-    padding: 10px;
-    color: white;
-  }
-
-
-  #tema-btn {
-    font-size: 20px;
-    top: 10px;
-    right: 10px;
-  }
-
-  main {
-    padding: 15px;
-  }
-
-  footer {
-    font-size: 0.85rem;
-    padding: 15px;
-  }
-
-  footer .social-links a {
-    font-size: 1rem;
-    margin: 0 5px;
-  }
+/* Reset e base */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #222222;
 }
+
+/* Cabeçalho */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+header h1.logo {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Botão de tema fixo */
+#tema-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index
