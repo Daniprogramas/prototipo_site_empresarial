@@ -1,59 +1,154 @@
-<section class="inicio fade-in">
-  <div class="intro-container">
-    <h2>Transforme sua presença digital com a <span class="marca">DaniSoft Web</span></h2>
+#conteudo {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
 
-    <p class="delay-1">
-      Na <strong>DaniSoft Web</strong>, damos vida às suas ideias com soluções digitais modernas, funcionais e criativas. Seja um site profissional, automações inteligentes ou uma apresentação marcante — estamos aqui para destacar você no mundo online.
-    </p>
+#conteudo h2 {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1.8rem;
+  color: #004080;
+}
 
-    <p class="delay-2">
-      Seu projeto merece inovação, eficiência e impacto. Vamos construir juntos uma presença digital que encanta e evolui.
-    </p>
+#conteudo p {
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
 
-    <div class="banner-placeholder delay-4">
-      <img src="sections/danisoft.jpeg" alt="Banner institucional da DaniSoft Web" loading="lazy">
-    </div>
+#conteudo ul {
+  max-width: 600px;
+  margin: 20px auto;
+  padding-left: 20px;
+  text-align: justify;
+}
 
-    <div class="cta-container delay-3">
-      <button onclick="carregarSecao('contato')" class="cta-btn">Solicite um orçamento</button>
-      <a href="#modelos" class="cta-link">Veja nossos modelos</a>
-    </div>
-  </div>
-</section>
+#conteudo li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
 
-<hr class="separador" />
+.banner-placeholder {
+  text-align: center;
+  margin: 20px auto;
+}
 
-<section id="modelos" class="fade-in">
-  <div class="modelos-container">
-    <h2>📁 Modelos de Sites</h2>
+.banner-placeholder img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
 
-    <p class="delay-1">
-      Conheça os modelos desenvolvidos pela <strong>DaniSoft Web</strong> — pensados para diferentes perfis e objetivos. Cada estrutura é personalizável, com foco em funcionalidade, estética e identidade visual.
-    </p>
+.banner-placeholder img:hover {
+  transform: scale(1.02);
+}
 
-    <div class="catalogo-modelos delay-2">
-      <div class="modelo-card">
-        <h3>🏢 Institucional</h3>
-        <p>Ideal para empresas, profissionais liberais e serviços que valorizam clareza, credibilidade e presença online sólida.</p>
-      </div>
+#conteudo button {
+  display: block;
+  margin: 30px auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-      <div class="modelo-card">
-        <h3>🎨 Portfólio Pessoal</h3>
-        <p>Perfeito para criativos, freelancers e profissionais que desejam apresentar projetos e habilidades com estilo.</p>
-      </div>
+#conteudo button:hover {
+  background-color: #003060;
+}
 
-      <div class="modelo-card">
-        <h3>🚀 Landing Page</h3>
-        <p>Focado em conversão e campanhas. Design direto, chamativo e com chamadas para ação estratégicas.</p>
-      </div>
-    </div>
+/* Contato */
+.contato-info {
+  margin: 20px 0;
+}
 
-    <p class="delay-3">
-      Todos os modelos funcionam diretamente no navegador e podem ser configurados para uso <strong>offline</strong>. Você recebe tudo pronto, com <strong>assistência remota</strong>, <strong>material explicativo</strong> e <strong>manutenção contínua</strong>.
-    </p>
+.contato-info p {
+  margin-bottom: 10px;
+}
 
-    <div class="cta-modelos delay-4">
-      <a href="#" onclick="carregarSecao('contato')" class="cta-btn">Quero escolher um modelo</a>
-    </div>
-  </div>
-</section>
+/* Link do Instagram no modo claro */
+.contato-info a[href*="instagram.com"] {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Formulário de contato */
+.form-contato {
+  margin-top: 20px;
+}
+
+.form-contato label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #004080;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.form-contato button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+  background-color: #003060;
+}
+
+/* Cards de modelos */
+.catalogo-modelos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.modelo-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.modelo-card:hover {
+  transform: scale(1.03);
+}
+
+.modelo-card h3 {
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.modelo-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
