@@ -184,6 +184,15 @@
   margin: 30px 0 10px;
 }
 
+.aviso-cards {
+  text-align: center;
+  font-size: 1rem;
+  color: #004080;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
 /* Animação de entrada */
 .fade-in {
   animation: fade
+}
