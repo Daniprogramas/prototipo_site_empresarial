@@ -1,4 +1,4 @@
-/* 🔄 Reset e base */
+/* Reset e base */
 html, body {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ html, body {
   color: #2c2c2c;
 }
 
-/* 🧭 Cabeçalho */
+/* Cabeçalho */
 header {
   background: linear-gradient(to right, #0055aa, #0077cc);
   color: white;
@@ -27,7 +27,7 @@ header h1.logo {
   color: white;
 }
 
-/* 📌 Navegação */
+/* Navegação */
 nav ul {
   list-style: none;
   padding: 0;
@@ -52,7 +52,7 @@ nav a:hover {
   color: #ffaa00;
 }
 
-/* 🌙 Botão de tema fixo */
+/* Botão de tema fixo */
 #tema-btn {
   position: fixed;
   top: 15px;
@@ -70,7 +70,7 @@ nav a:hover {
   transform: scale(1.2);
 }
 
-/* 🧱 Conteúdo principal */
+/* Conteúdo principal */
 main {
   flex: 1;
   padding: 30px;
@@ -81,7 +81,7 @@ main {
   box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
 
-/* 🦶 Rodapé */
+/* Rodapé */
 footer {
   background-color: #0055aa;
   color: white;
@@ -112,7 +112,7 @@ footer .social-links a {
   display: inline-block;
 }
 
-/* ✅ Modal de agradecimento */
+/* Modal de agradecimento */
 .modal {
   display: none;
   position: fixed;
