@@ -1,7 +1,7 @@
 :root {
   --primary: #4e54c8;
   --primary-dark: #3b3fc0;
-  --bg: #e6f0ff; /* Azul claro elegante */
+  --bg: #e6f0ff;
   --bg-dark: #121212;
   --surface: #ffffff;
   --surface-dark: #1e1e1e;
@@ -26,11 +26,11 @@ body.dark-mode {
   color: var(--text-dark);
 }
 
-/* Cabeçalho e rodapé integrados */
+/* Cabeçalho e rodapé sem bordas */
 .card-header,
 .card-footer {
   background-color: var(--surface);
-  color: var(--text);
+  color: white;
   width: 100%;
   padding: 2rem 0;
   text-align: center;
@@ -41,17 +41,15 @@ body.dark-mode {
 body.dark-mode .card-header,
 body.dark-mode .card-footer {
   background-color: var(--surface-dark);
-  color: var(--text-dark);
+  color: white;
   border: none;
 }
 
-/* Título e subtítulo sempre brancos */
 .card-header h1,
 .card-header p {
   color: white;
 }
 
-/* Cabeçalho interno */
 .card-header h1 {
   font-size: 2.4rem;
   font-weight: 600;
@@ -64,7 +62,7 @@ body.dark-mode .card-footer {
   margin-top: 0.5rem;
 }
 
-/* Container principal */
+/* Conteúdo centralizado */
 .card-wrapper {
   max-width: 900px;
   margin: 0 auto;
