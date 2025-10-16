@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const card = params.get("card");
 
+  // Carrega conteúdo do sistema
   fetch(`/prototipo_site_empresarial/sections/projetos/${card}.json`)
     .then((res) => res.json())
     .then((data) => {
@@ -26,21 +27,23 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="back-btn" onclick="window.history.back()">← Voltar</div>
       `;
     });
-});
-const toggleBtn = document.getElementById('toggle-dark');
-const body = document.body;
 
-// Verifica se o tema já foi salvo
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
-  body.classList.remove('dark-mode');
-} else {
-  body.classList.add('dark-mode');
-}
+  // Ativa modo escuro/claro com persistência
+  const toggleBtn = document.getElementById('toggle-dark');
+  const body = document.body;
 
-// Alterna e salva o tema
-toggleBtn.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  const newTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-  localStorage.setItem('theme', newTheme);
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    body.classList.remove('dark-mode');
+  } else {
+    body.classList.add('dark-mode');
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const newTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+      localStorage.setItem('theme', newTheme);
+    });
+  }
 });
