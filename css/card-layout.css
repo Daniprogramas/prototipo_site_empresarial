@@ -6,6 +6,7 @@
   --bg-dark: #121212;
   --text: #333;
   --text-dark: #f0f0f0;
+  --highlight-dark: #FFD700;
 }
 
 body {
@@ -21,27 +22,36 @@ body.dark-mode {
   color: var(--text-dark);
 }
 
+/* Container principal */
 .card-wrapper {
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
   padding: 2rem;
 }
 
+/* Cabeçalho */
 .card-header {
+  background-color: var(--primary);
+  color: white;
+  padding: 2rem;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .card-header h1 {
   font-size: 2.5rem;
-  color: var(--primary);
+  margin: 0;
 }
 
 .card-header p {
   font-size: 1.2rem;
-  opacity: 0.8;
+  opacity: 0.9;
+  margin-top: 0.5rem;
 }
 
+/* Conteúdo */
 .card-content h2 {
   font-size: 1.5rem;
   color: var(--primary-dark);
@@ -61,6 +71,7 @@ body.dark-mode {
   text-align: left;
 }
 
+/* Botão de ação */
 .cta-btn {
   display: inline-block;
   margin-top: 1rem;
@@ -76,6 +87,7 @@ body.dark-mode {
   background-color: var(--primary-dark);
 }
 
+/* Rodapé */
 .card-footer {
   background-color: var(--primary);
   color: white;
@@ -84,10 +96,11 @@ body.dark-mode {
   margin: 0;
   box-sizing: border-box;
   text-align: center;
+  font-size: 0.9rem;
   opacity: 1;
 }
 
-
+/* Botão de tema */
 .dark-toggle {
   position: fixed;
   top: 1rem;
@@ -100,6 +113,7 @@ body.dark-mode {
   color: var(--primary);
 }
 
+/* Botão de voltar */
 .back-btn {
   display: block;
   margin: 2rem auto 0;
@@ -108,4 +122,9 @@ body.dark-mode {
   color: var(--primary);
   text-decoration: underline;
   cursor: pointer;
+  transition: color 0.3s;
+}
+
+body.dark-mode .back-btn {
+  color: var(--highlight-dark);
 }
