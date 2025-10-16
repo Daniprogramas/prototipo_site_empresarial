@@ -1,0 +1,16 @@
+{
+  "title": "Sistema de Agendamento",
+  "icon": "📅",
+  "subtitle": "Organize seus atendimentos com eficiência e estilo.",
+  "features": [
+    "Cadastro de serviços e horários disponíveis",
+    "Confirmação automática por e-mail",
+    "Painel administrativo para controle de agendamentos",
+    "Design responsivo e personalizável",
+    "Banco de dados MySQL integrado"
+  ],
+  "demoUser": "demo@danisoftweb.com",
+  "demoPass": "123456",
+  "demoLink": "https://demo.danisoftweb.com/agendamento",
+  "callToAction": "Quer uma versão personalizada para sua empresa?"
+}
