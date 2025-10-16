@@ -88,3 +88,8 @@ body.dark-mode .destaque-frase {
 body.dark-mode .back-btn {
   color: #FFD700; /* amarelo ouro */
 }
+.back-btn:hover {
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
