@@ -27,6 +27,13 @@ body.dark-mode {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
+  background-color: var(--bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+body.dark-mode .card-wrapper {
+  background-color: #1e1e1e;
 }
 
 /* Cabeçalho */
@@ -97,7 +104,6 @@ body.dark-mode {
   box-sizing: border-box;
   text-align: center;
   font-size: 0.9rem;
-  opacity: 1;
 }
 
 /* Botão de tema */
