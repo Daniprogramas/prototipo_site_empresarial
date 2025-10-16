@@ -27,3 +27,20 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
     });
 });
+const toggleBtn = document.getElementById('toggle-dark');
+const body = document.body;
+
+// Verifica se o tema já foi salvo
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+  body.classList.remove('dark-mode');
+} else {
+  body.classList.add('dark-mode');
+}
+
+// Alterna e salva o tema
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  const newTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', newTheme);
+});
