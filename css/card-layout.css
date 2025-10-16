@@ -1,9 +1,9 @@
 :root {
   --primary: #4e54c8;
   --primary-dark: #3b3fc0;
-  --bg: #ffffff;
+  --bg: #e6f0ff; /* Azul claro elegante */
   --bg-dark: #121212;
-  --surface: #f9f9fc;
+  --surface: #ffffff;
   --surface-dark: #1e1e1e;
   --text: #2c2c2c;
   --text-dark: #f0f0f0;
@@ -18,7 +18,7 @@ html, body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bg);
   color: var(--text);
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode {
@@ -35,7 +35,7 @@ body.dark-mode {
   padding: 2rem 0;
   text-align: center;
   box-sizing: border-box;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #d0d8e0;
 }
 
 body.dark-mode .card-header,
@@ -64,4 +64,85 @@ body.dark-mode .card-footer {
   margin: 0 auto;
   padding: 2rem;
   background-color: var(--surface);
-  border-radius
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+body.dark-mode .card-wrapper {
+  background-color: var(--surface-dark);
+}
+
+/* Conteúdo */
+.card-content h2 {
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.card-content p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.card-content ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+/* Botão de ação */
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.6rem;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Rodapé interno */
+.card-footer {
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
+}
+
+/* Botão de tema */
+.dark-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  color: var(--primary);
+}
+
+/* Botão de voltar */
+.back-btn {
+  display: inline-block;
+  margin: 2rem auto 0;
+  font-size: 0.9rem;
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .back-btn {
+  color: var(--highlight-dark);
+}
