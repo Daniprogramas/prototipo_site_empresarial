@@ -71,3 +71,33 @@ function mostrarContato() {
       contatoContainer.style.display = 'block';
     });
 }
+function mostrarContato() {
+  const contatoContainer = document.getElementById("contato-dinamico");
+
+  // Evita carregar mais de uma vez
+  if (contatoContainer.dataset.loaded === "true") {
+    contatoContainer.style.display = "block";
+    contatoContainer.scrollIntoView({ behavior: "smooth" });
+    return;
+  }
+
+  fetch("/prototipo_site_empresarial/sections/contato.html")
+    .then(res => res.text())
+    .then(html => {
+      // Extrai apenas o conteúdo da <section id="contato">
+      const tempDiv = document.createElement("div");
+      tempDiv.innerHTML = html;
+
+      const contatoSection = tempDiv.querySelector("#contato");
+      if (contatoSection) {
+        contatoContainer.innerHTML = contatoSection.outerHTML;
+        contatoContainer.style.display = "block";
+        contatoContainer.dataset.loaded = "true";
+        contatoContainer.scrollIntoView({ behavior: "smooth" });
+      }
+    })
+    .catch(err => {
+      contatoContainer.innerHTML = "<p>❌ Não foi possível carregar a seção de contato.</p>";
+      contatoContainer.style.display = "block";
+    });
+}
