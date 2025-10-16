@@ -9,8 +9,11 @@
   --highlight-dark: #FFD700;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bg);
   color: var(--text);
@@ -22,29 +25,14 @@ body.dark-mode {
   color: var(--text-dark);
 }
 
-/* Container principal */
-.card-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: var(--bg);
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-}
-
-body.dark-mode .card-wrapper {
-  background-color: #1e1e1e;
-}
-
 /* Cabeçalho */
 .card-header {
   background-color: var(--primary);
   color: white;
-  padding: 2rem;
-  width: 100vw;
-  margin: 0;
-  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .card-header h1 {
@@ -56,6 +44,21 @@ body.dark-mode .card-wrapper {
   font-size: 1.2rem;
   opacity: 0.9;
   margin-top: 0.5rem;
+}
+
+/* Container principal */
+.card-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+body.dark-mode .card-wrapper {
+  background-color: #1e1e1e;
 }
 
 /* Conteúdo */
@@ -98,12 +101,11 @@ body.dark-mode .card-wrapper {
 .card-footer {
   background-color: var(--primary);
   color: white;
-  padding: 1rem;
-  width: 100vw;
-  margin: 0;
-  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 0;
   text-align: center;
   font-size: 0.9rem;
+  box-sizing: border-box;
 }
 
 /* Botão de tema */
@@ -121,9 +123,8 @@ body.dark-mode .card-wrapper {
 
 /* Botão de voltar */
 .back-btn {
-  display: block;
+  display: inline-block;
   margin: 2rem auto 0;
-  text-align: center;
   font-size: 0.9rem;
   color: var(--primary);
   text-decoration: underline;
