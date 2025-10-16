@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${data.callToAction}</p>
         <a href="#" class="cta-btn" onclick="mostrarContato()">Solicitar orçamento</a>
 
-        <div class="back-btn" onclick="window.location.href='/prototipo_site_empresarial/index.html'">← Voltar</div>
+        <a class="back-btn" onclick="window.location.href='/prototipo_site_empresarial/index.html'">← Voltar</a>
+
 
       `;
     });
