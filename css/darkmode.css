@@ -71,3 +71,17 @@ body.dark-mode button:hover,
 body.dark-mode .form-contato button:hover {
   background-color: #3e4c64;
 }
+/* Subtítulo no modo escuro */
+body.dark-mode .subtitulo {
+  color: #ffffff; /* branco para contraste ideal */
+}
+
+/* Frase "🔗 Clique em um modelo..." */
+body.dark-mode .aviso-cards {
+  color: #ffcc00; /* amarelo vibrante para destaque */
+}
+
+/* Frase "Pronto para transformar sua ideia em realidade?" */
+body.dark-mode .destaque-frase {
+  color: #ffcc00; /* mesmo amarelo para consistência visual */
+}
