@@ -48,3 +48,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+function mostrarContato() {
+  const contatoContainer = document.getElementById("contato-dinamico");
+
+  // Se já estiver carregado, apenas exibe
+  if (contatoContainer.innerHTML.trim() !== "") {
+    contatoContainer.style.display = 'block';
+    contatoContainer.scrollIntoView({ behavior: 'smooth' });
+    return;
+  }
+
+  // Carrega o conteúdo da seção de contato
+  fetch('/prototipo_site_empresarial/sections/contato.html')
+    .then(res => res.text())
+    .then(html => {
+      contatoContainer.innerHTML = html;
+      contatoContainer.style.display = 'block';
+      contatoContainer.scrollIntoView({ behavior: 'smooth' });
+    })
+    .catch(err => {
+      contatoContainer.innerHTML = "<p>❌ Não foi possível carregar a seção de contato.</p>";
+      contatoContainer.style.display = 'block';
+    });
+}
