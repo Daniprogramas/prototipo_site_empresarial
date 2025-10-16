@@ -77,11 +77,16 @@ body.dark-mode {
 }
 
 .card-footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
   text-align: center;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  opacity: 0.6;
+  opacity: 1;
 }
+
 
 .dark-toggle {
   position: fixed;
