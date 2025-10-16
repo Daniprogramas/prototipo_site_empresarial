@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const card = params.get("card");
 
-  // Carrega conteúdo do sistema
   fetch(`/prototipo_site_empresarial/sections/projetos/${card}.json`)
     .then((res) => res.json())
     .then((data) => {
@@ -15,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2>Funcionalidades</h2>
         <ul>${data.features.map(f => `<li>${f}</li>`).join("")}</ul>
 
+        <h2>Sobre o Sistema</h2>
+        <p>${data.description}</p>
+
         <h2>Testar Demonstração</h2>
         <p><strong>Usuário:</strong> ${data.demoUser}</p>
         <p><strong>Senha:</strong> ${data.demoPass}</p>
@@ -22,13 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <h2>Solicitar Orçamento</h2>
         <p>${data.callToAction}</p>
-        <a href="/prototipo_site_empresarial/sections/contato.html" class="cta-btn">Solicitar orçamento</a>
+        <a href="/prototipo_site_empresarial/index.html#contato" class="cta-btn">Solicitar orçamento</a>
 
         <div class="back-btn" onclick="window.history.back()">← Voltar</div>
       `;
     });
 
-  // Ativa modo escuro/claro com persistência
   const toggleBtn = document.getElementById('toggle-dark');
   const body = document.body;
 
