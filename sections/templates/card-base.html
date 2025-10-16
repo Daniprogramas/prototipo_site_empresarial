@@ -8,21 +8,23 @@
   <link rel="stylesheet" href="/prototipo_site_empresarial/css/darkmode.css" />
   <link rel="stylesheet" href="/prototipo_site_empresarial/css/card-layout.css" />
 </head>
-<body class="dark-mode">
+<body>
   <button id="toggle-dark" class="dark-toggle">🌙</button>
 
-  <section class="hero">
-    <h1 id="card-title">📦 Sistema</h1>
-    <p id="card-subtitle">Descrição do sistema.</p>
-  </section>
+  <main class="card-wrapper">
+    <header class="card-header">
+      <h1 id="card-title">📦 Sistema</h1>
+      <p id="card-subtitle">Descrição do sistema.</p>
+    </header>
 
-  <section class="content" id="card-content">
-    <!-- Conteúdo será carregado dinamicamente -->
-  </section>
+    <section id="card-content" class="card-content">
+      <!-- Conteúdo será carregado dinamicamente -->
+    </section>
 
-  <footer>
-    &copy; 2025 DaniSoft Web
-  </footer>
+    <footer class="card-footer">
+      <p>&copy; 2025 DaniSoft Web</p>
+    </footer>
+  </main>
 
   <script src="/prototipo_site_empresarial/js/card-loader.js"></script>
 </body>
