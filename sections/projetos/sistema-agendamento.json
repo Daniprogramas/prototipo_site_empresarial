@@ -1,26 +1,30 @@
 {
   "title": "Sistema de Agendamento",
   "icon": "📅",
-  "subtitle": "Organize seus atendimentos com eficiência e estilo.",
-  "features": [
-    "Cadastro de serviços, profissionais e horários disponíveis",
-    "Agendamento online com confirmação automática por e-mail",
-    "Painel administrativo com visão geral dos atendimentos",
-    "Relatórios de produtividade e taxa de ocupação",
-    "Design responsivo e personalizável para sua marca",
-    "Integração com Google Agenda e WhatsApp",
-    "Controle de disponibilidade por profissional ou setor",
-    "Histórico de clientes e atendimentos anteriores"
+  "subtitle": "Agende atendimentos com praticidade, segurança e estilo.",
+  
+  "videoDemo": "link-do-video.mp4",
+  // Substitua "link-do-video.mp4" pelo caminho ou URL do seu vídeo demonstrativo
+  
+  "highlights": [
+    "Dark Mode – conforto visual para quem tem dificuldades com luminosidade",
+    "Responsividade – adaptação perfeita em qualquer tela (desktop, tablet e celular)",
+    "Formulários de contato – comunicação direta e prática com seus clientes",
+    "Segurança – informações da sua empresa protegidas e organizadas",
+    "Catálogo – apresente seus produtos ou projetos de forma clara e profissional",
+    "Valores e serviços – transparência para o cliente conhecer suas opções",
+    "Diferentes formas de contato – WhatsApp, e-mail e outros canais integrados"
   ],
+  
   "description": "O Sistema de Agendamento da DaniSoft Web foi desenvolvido para empresas que desejam otimizar seus atendimentos, reduzir falhas de comunicação e oferecer uma experiência moderna aos seus clientes. Com uma interface intuitiva e recursos avançados, ele permite que seus clientes escolham horários disponíveis, recebam confirmações automáticas e que você tenha controle total sobre sua agenda.\n\nIdeal para clínicas, salões de beleza, consultorias, academias, oficinas e qualquer negócio que trabalhe com horários marcados. O sistema é adaptável às suas necessidades e pode ser personalizado com sua identidade visual.",
+  
   "benefits": [
-    "Redução de faltas e cancelamentos com notificações automáticas",
-    "Mais agilidade no atendimento e organização interna",
-    "Melhor experiência para o cliente com agendamento 24h",
-    "Economia de tempo e recursos com automação"
+    "✅ Redução de faltas e cancelamentos com notificações automáticas",
+    "✅ Mais agilidade no atendimento e organização interna",
+    "✅ Melhor experiência para o cliente com agendamento 24h",
+    "✅ Economia de tempo e recursos com automação inteligente"
   ],
-  "demoUser": "demo@danisoftweb.com",
-  "demoPass": "123456",
-  "demoLink": "https://demo.danisoftweb.com/agendamento",
-  "callToAction": "Quer uma versão personalizada para sua empresa? Solicite um orçamento e receba uma proposta sob medida com funcionalidades específicas para o seu negócio."
+  
+
+  "callToAction": "Gostou da demonstração? Solicite um orçamento e tenha uma Landing Page ou Sistema exclusivo com a cara do seu negócio. Transforme sua presença digital com a DaniSoft Web."
 }
