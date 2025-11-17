@@ -155,7 +155,6 @@ footer .social-links a {
   z-index: 10000;
 }
 
-<style>
   #whatsapp-button {
     position: fixed;   /* mantém fixo na tela */
     bottom: 20px;      /* distância da borda inferior */
