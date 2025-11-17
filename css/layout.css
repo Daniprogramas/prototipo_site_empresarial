@@ -154,16 +154,18 @@ footer .social-links a {
   cursor: pointer;
   z-index: 10000;
 }
-#whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-}
 
-#whatsapp-button img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-}
+<style>
+  #whatsapp-button {
+    position: fixed;   /* mantém fixo na tela */
+    bottom: 20px;      /* distância da borda inferior */
+    right: 20px;       /* distância da borda direita */
+    z-index: 9999;     /* fica acima de outros elementos */
+  }
+
+  #whatsapp-button img {
+    width: 60px;       /* tamanho do ícone */
+    height: 60px;
+    border-radius: 50%; /* deixa redondo */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* sombra para destacar */
+  }
