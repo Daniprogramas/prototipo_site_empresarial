@@ -1,0 +1,40 @@
+{
+  "title": "Sistema de Orçamento",
+  "icon": "📝",
+  "subtitle": "Crie orçamentos profissionais de forma rápida, organizada e padronizada.",
+  
+  "features": [
+    "📑 Geração automática de PDF em formato ABNT",
+    "👤 Cadastro de cliente (nome, CPF ou CNPJ, empresa se houver)",
+    "🛠️ Definição do tipo de serviço e linguagens utilizadas",
+    "📦 Inclusão de quantidade, valor e prazo de entrega",
+    "📥 Material de instalação e acesso incluso",
+    "📖 Manual de instruções de uso",
+    "🛠️ 7 dias de manutenção gratuita",
+    "✅ Execução somente após aprovação do cliente",
+    "💻 Interface simples em HTML e CSS",
+    "🐍 Backend em Python para processamento e geração de PDF",
+    "🌐 Acesso via navegador (IP local)"
+  ],
+  
+  "description": "O Sistema de Orçamento foi desenvolvido para profissionais e pequenas empresas que desejam automatizar a criação de propostas comerciais. Ele organiza dados do cliente e do serviço solicitado, gera documentos padronizados em PDF e garante transparência no processo. Além disso, inclui manual de uso, material de instalação e 7 dias de manutenção gratuita, oferecendo praticidade e confiança.",
+  
+  "benefits": [
+    "✅ Documentos profissionais e padronizados",
+    "✅ Economia de tempo com geração automática",
+    "✅ Organização centralizada de informações",
+    "✅ Flexibilidade para pessoas físicas e jurídicas",
+    "✅ Transparência e segurança com aprovação prévia"
+  ],
+  
+  "price": "A partir de R$ 300,00 por projeto",
+  
+  "paymentMethods": [
+    "Pix",
+    "Cartão de crédito/débito"
+  ],
+  
+  "videoDemo": "video-do-sistema.mp4",
+  
+  "callToAction": "Gostou da solução? Solicite um orçamento e tenha um sistema exclusivo para organizar seus serviços com profissionalismo."
+}
