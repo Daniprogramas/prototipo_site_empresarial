@@ -7,7 +7,7 @@
   --surface-dark: #1e1e1e;
   --text: #2c2c2c;
   --text-dark: #f0f0f0;
-  --highlight-dark: #FFD700;
+  --highlight-dark: #FFD700; /* amarelo para dark mode */
 }
 
 /* Base */
@@ -77,15 +77,14 @@ body.dark-mode .card-wrapper {
 /* Conteúdo */
 .card-content h2 {
   font-size: 1.5rem;
-  color: var(--primary-dark);
+  color: var(--primary-dark); /* azul no modo claro */
   margin-top: 2rem;
   text-align: center;
   font-weight: 600;
 }
 
 body.dark-mode .card-content h2 {
-  color: var(--primary);
-  text-shadow: 0 0 6px rgba(78, 84, 200, 0.6);
+  color: var(--highlight-dark); /* amarelo no modo escuro */
 }
 
 .card-content p {
@@ -124,11 +123,15 @@ body.dark-mode .card-content h2 {
 /* Rodapé */
 .card-footer {
   background-color: #000;
-  color: #fff;
   font-size: 0.95rem;
   padding: 1.5rem 0;
   text-align: center;
   box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+  color: black; /* texto preto no modo claro */
+}
+
+body.dark-mode .card-footer {
+  color: white; /* texto branco no modo escuro */
 }
 
 /* Assinatura no rodapé */
@@ -144,7 +147,7 @@ body.dark-mode .footer-signature {
   color: white; /* branco no modo escuro */
 }
 
-/* Botão de tema */
+/* Botão de tema (sol/lua) */
 .dark-toggle {
   position: fixed;
   top: 1rem;
@@ -154,14 +157,22 @@ body.dark-mode .footer-signature {
   font-size: 1.6rem;
   cursor: pointer;
   z-index: 1000;
-  color: var(--primary);
+  color: var(--primary);  /* sol azul no modo claro */
   transition: color 0.3s ease;
 }
 
+.dark-toggle:hover {
+  background: none;       /* remove qualquer fundo no hover */
+}
+
 body.dark-mode .dark-toggle {
-  background: none;       /* garante sem quadrado */
+  background: none;       /* sem quadrado */
   border: none;
-  color: var(--highlight-dark); /* cor da lua */
+  color: var(--highlight-dark); /* lua amarela no modo escuro */
+}
+
+body.dark-mode .dark-toggle:hover {
+  background: none;       /* sem fundo no hover */
 }
 
 /* Botão de voltar */
@@ -169,12 +180,12 @@ body.dark-mode .dark-toggle {
   display: inline-block;
   margin: 2rem auto 0;
   font-size: 0.95rem;
-  color: var(--primary);
+  color: var(--primary); /* azul no modo claro */
   text-decoration: underline;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 body.dark-mode .back-btn {
-  color: var(--highlight-dark);
+  color: var(--highlight-dark); /* amarelo no modo escuro */
 }
