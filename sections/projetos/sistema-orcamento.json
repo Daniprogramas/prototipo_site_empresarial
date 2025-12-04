@@ -1,7 +1,7 @@
 {
   "title": "Sistema de Orçamento",
-  "icon": "📝",
-  "subtitle": "Crie orçamentos profissionais de forma rápida, organizada e padronizada.",
+  "icon": "",
+  "subtitle": "Crie orçamentos profissionais de forma rápida,\norganizada e padronizada.",
 
   "features": [
     "Geração automática de PDF em formato ABNT",
