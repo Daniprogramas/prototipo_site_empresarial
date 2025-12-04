@@ -47,9 +47,15 @@ body.dark-mode {
 }
 
 .card-header p {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   opacity: 0.9;
   margin-top: 0.5rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 1.4;
 }
 
 /* Conteúdo centralizado */
@@ -70,14 +76,16 @@ body.dark-mode .card-wrapper {
 
 /* Conteúdo */
 .card-content h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--primary-dark);
   margin-top: 2rem;
   text-align: center;
+  font-weight: 600;
 }
 
 body.dark-mode .card-content h2 {
   color: var(--primary);
+  text-shadow: 0 0 6px rgba(78, 84, 200, 0.6);
 }
 
 .card-content p {
@@ -123,9 +131,17 @@ body.dark-mode .card-content h2 {
   box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
 }
 
-body.dark-mode .card-footer {
-  background-color: #000;
-  color: var(--text-dark);
+/* Assinatura no rodapé */
+.footer-signature {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+  color: black; /* preto no modo claro */
+}
+
+body.dark-mode .footer-signature {
+  color: white; /* branco no modo escuro */
 }
 
 /* Botão de tema */
@@ -139,24 +155,4 @@ body.dark-mode .card-footer {
   cursor: pointer;
   z-index: 1000;
   color: var(--primary);
-  transition: color 0.3s ease;
-}
-
-body.dark-mode .dark-toggle {
-  color: var(--highlight-dark);
-}
-
-/* Botão de voltar */
-.back-btn {
-  display: inline-block;
-  margin: 2rem auto 0;
-  font-size: 0.95rem;
-  color: var(--primary);
-  text-decoration: underline;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-body.dark-mode .back-btn {
-  color: var(--highlight-dark);
-}
+  transition: color 0
