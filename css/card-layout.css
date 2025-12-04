@@ -149,10 +149,32 @@ body.dark-mode .footer-signature {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: none;
-  border: none;
+  background: none;       /* sem fundo */
+  border: none;           /* sem borda */
   font-size: 1.6rem;
   cursor: pointer;
   z-index: 1000;
   color: var(--primary);
-  transition: color 0
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .dark-toggle {
+  background: none;       /* garante sem quadrado */
+  border: none;
+  color: var(--highlight-dark); /* cor da lua */
+}
+
+/* Botão de voltar */
+.back-btn {
+  display: inline-block;
+  margin: 2rem auto 0;
+  font-size: 0.95rem;
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .back-btn {
+  color: var(--highlight-dark);
+}
