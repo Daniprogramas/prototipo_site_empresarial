@@ -48,15 +48,17 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
     });
 
-  // Controle de tema (dark/light)
+  // Controle de tema (dark/light) com ícones sol/lua
   const toggleBtn = document.getElementById('toggle-dark');
   const body = document.body;
 
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'light') {
     body.classList.remove('dark-mode');
+    toggleBtn.textContent = "🌞"; // sol no modo claro
   } else {
     body.classList.add('dark-mode');
+    toggleBtn.textContent = "🌙"; // lua no modo escuro
   }
 
   if (toggleBtn) {
@@ -64,7 +66,21 @@ document.addEventListener("DOMContentLoaded", () => {
       body.classList.toggle('dark-mode');
       const newTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
       localStorage.setItem('theme', newTheme);
+
+      // troca o ícone conforme o modo
+      toggleBtn.textContent = newTheme === 'dark' ? "🌙" : "🌞";
     });
+  }
+
+  // Ajuste do cabeçalho para centralizar e dar espaçamento
+  const header = document.querySelector(".card-header");
+  if (header) {
+    header.style.display = "flex";
+    header.style.flexDirection = "column";
+    header.style.alignItems = "center";
+    header.style.justifyContent = "center";
+    header.style.padding = "2.5rem 1.5rem"; // mais espaçamento das bordas
+    header.style.textAlign = "center";
   }
 });
 
