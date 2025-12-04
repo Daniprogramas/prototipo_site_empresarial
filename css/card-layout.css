@@ -122,7 +122,7 @@ body.dark-mode .card-content h2 {
 
 /* Rodapé */
 .card-footer {
-  background-color: #000;
+  background-color: black;
   font-size: 0.95rem;
   padding: 1.5rem 0;
   text-align: center;
