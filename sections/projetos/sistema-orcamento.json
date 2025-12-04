@@ -34,7 +34,9 @@
 
   "paymentMethods": [
     "Pix",
-    "Cartão de crédito/débito"
+    "Cartão de crédito",
+    "Boleto bancário",
+    "Transferência bancária"
   ],
 
   "videoDemo": "video-do-sistema.mp4",
