@@ -10,6 +10,7 @@
   --highlight-dark: #FFD700;
 }
 
+/* Base */
 html, body {
   margin: 0;
   padding: 0;
@@ -26,68 +27,62 @@ body.dark-mode {
   color: var(--text-dark);
 }
 
-/* Cabeçalho e rodapé sem bordas */
-.card-header,
-.card-footer {
-  background-color: var(--surface);
-  color: white;
+/* Cabeçalho */
+.card-header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   text-align: center;
   box-sizing: border-box;
   border: none;
-}
-
-body.dark-mode .card-header,
-body.dark-mode .card-footer {
-  background-color: var(--surface-dark);
-  color: white;
-  border: none;
-}
-
-.card-header h1,
-.card-header p {
-  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .card-header h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
   margin: 0;
+  letter-spacing: 1px;
 }
 
 .card-header p {
-  font-size: 1.1rem;
-  opacity: 0.85;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  opacity: 0.9;
   margin-top: 0.5rem;
 }
 
 /* Conteúdo centralizado */
 .card-wrapper {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 2rem;
   background-color: var(--surface);
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
 }
 
 body.dark-mode .card-wrapper {
   background-color: var(--surface-dark);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
 }
 
 /* Conteúdo */
 .card-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--primary-dark);
   margin-top: 2rem;
   text-align: center;
 }
 
+body.dark-mode .card-content h2 {
+  color: var(--primary);
+}
+
 .card-content p {
   text-align: justify;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 1rem;
 }
 
@@ -104,23 +99,33 @@ body.dark-mode .card-wrapper {
   margin-top: 1.5rem;
   padding: 0.9rem 1.6rem;
   background-color: var(--primary);
-  color: white;
+  color: #fff;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
-  font-weight: 500;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .cta-btn:hover {
   background-color: var(--primary-dark);
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-/* Rodapé interno */
+/* Rodapé */
 .card-footer {
-  font-size: 0.9rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.95rem;
   padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+}
+
+body.dark-mode .card-footer {
+  background-color: #000;
+  color: var(--text-dark);
 }
 
 /* Botão de tema */
@@ -130,17 +135,22 @@ body.dark-mode .card-wrapper {
   right: 1rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   cursor: pointer;
   z-index: 1000;
   color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .dark-toggle {
+  color: var(--highlight-dark);
 }
 
 /* Botão de voltar */
 .back-btn {
   display: inline-block;
   margin: 2rem auto 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--primary);
   text-decoration: underline;
   cursor: pointer;
