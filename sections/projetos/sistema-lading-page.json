@@ -1,0 +1,45 @@
+{
+  "title": "Landing Page Empresarial",
+  "icon": "",
+  "subtitle": "Apresente sua empresa com uma página moderna,\nprofissional e focada em resultados.",
+
+  "features": [
+    "Design responsivo e otimizado para dispositivos móveis",
+    "Seções de destaque para serviços, diferenciais e depoimentos",
+    "Formulário de contato integrado para geração de leads",
+    "Estrutura em HTML e CSS com boas práticas de SEO",
+    "Integração opcional com Google Analytics e Pixel",
+    "Código limpo e fácil de personalizar",
+    "Hospedagem simples em qualquer servidor web"
+  ],
+
+  "documentation": [
+    "Guia de instalação e publicação incluso",
+    "Manual de personalização de conteúdo e cores",
+    "7 dias de suporte gratuito para ajustes",
+    "Entrega somente após validação do cliente"
+  ],
+
+  "description": "A Landing Page Empresarial foi criada para empresas que desejam fortalecer sua presença digital e captar novos clientes. Com design moderno e responsivo, ela destaca os principais serviços, diferenciais e depoimentos, além de incluir formulário de contato para geração de leads. O projeto é entregue com manual de uso, guia de instalação e suporte inicial, garantindo praticidade e profissionalismo.",
+
+  "benefits": [
+    "Imagem profissional e confiável para sua marca",
+    "Maior conversão de visitantes em clientes",
+    "Layout moderno e responsivo",
+    "Facilidade de personalização para diferentes segmentos",
+    "Transparência e segurança com validação prévia"
+  ],
+
+  "price": "Landing Pages a partir de R$: 200,00. Consulte valores personalizados conforme a necessidade da sua empresa",
+
+  "paymentMethods": [
+    "Pix",
+    "Cartão de crédito",
+    "Boleto bancário",
+    "Transferência bancária"
+  ],
+
+  "videoDemo": "video-demo-landing.mp4",
+
+  "callToAction": "Gostou da solução? Solicite um orçamento e tenha uma landing page exclusiva para destacar sua empresa com profissionalismo."
+}
