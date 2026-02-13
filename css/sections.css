@@ -192,6 +192,14 @@
   font-weight: bold;
 }
 
+.erro-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: block;
+}
+
+
 /* Animação de entrada */
 .fade-in {
   animation: fade
