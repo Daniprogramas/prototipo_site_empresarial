@@ -19,31 +19,44 @@ window.addEventListener('DOMContentLoaded', function () {
   carregarSecao('inicio');
 });
 
+
+
 //validação do formulario
-// Seleciona o formulário
 const form = document.querySelector('.form-contato');
+const emailInput = document.getElementById('email');
+const emailErro = document.getElementById('email-erro');
 
-if (form) {
+if (form && emailInput && emailErro) {
   form.addEventListener('submit', function(e) {
-    e.preventDefault(); // impede envio automático
+    e.preventDefault();
 
-    const email = document.getElementById('email').value.trim();
-
-    // Regex mais completa para validar email
+    const email = emailInput.value.trim();
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    if (!emailRegex.test(email)) {
-      alert('Por favor, insira um email válido.');
-      return; // cancela envio
-    }
+    // Limpa mensagem de erro antes da validação
+    emailErro.textContent = '';
 
-    // Opcional: validar comprimento mínimo e máximo
-    if (email.length < 6 || email.length > 254) {
-      alert('O email deve ter entre 6 e 254 caracteres.');
+    // Validação de formato
+    if (!emailRegex.test(email)) {
+      emailErro.textContent = 'Por favor, insira um email válido.';
+      emailInput.focus();
       return;
     }
 
-    // Se passou na validação, envia o formulário
+    // Validação de comprimento
+    if (email.length < 6 || email.length > 254) {
+      emailErro.textContent = 'O email deve ter entre 6 e 254 caracteres.';
+      emailInput.focus();
+      return;
+    }
+
+    // Se passou em tudo, envia o formulário
     form.submit();
   });
+
+  // Remove mensagem de erro quando o usuário digita algo
+  emailInput.addEventListener('input', () => {
+    emailErro.textContent = '';
+  });
 }
+
