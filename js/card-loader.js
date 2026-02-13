@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <h2>Solicitar Orçamento</h2>
         <p>${data.callToAction}</p>
-        <a href="#" class="cta-btn" onclick="window.open('https://wa.me/5584994285441?text=Olá,%20vim%20do%20site%20e%20verifiquei%20os%20projetos.%20Gostaria%20de%20obter%20mais%20informações.','_blank')"">Solicitar orçamento</a>
+        <a href="#" class="cta-btn" onclick="window.open('https://wa.me/5584988731638?text=Olá,%20vim%20do%20site%20e%20verifiquei%20os%20projetos.%20Gostaria%20de%20obter%20mais%20informações.','_blank')"">Solicitar orçamento</a>
 
         <a class="back-btn" onclick="window.location.href='/prototipo_site_empresarial/index.html'">← Voltar</a>
       `;
