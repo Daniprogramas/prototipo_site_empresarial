@@ -22,41 +22,39 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 //validação do formulario
+// ===== Validação do formulário de contato =====
 const form = document.querySelector('.form-contato');
 const emailInput = document.getElementById('email');
 const emailErro = document.getElementById('email-erro');
 
 if (form && emailInput && emailErro) {
   form.addEventListener('submit', function(e) {
-    e.preventDefault();
+    e.preventDefault(); // impede envio automático
 
     const email = emailInput.value.trim();
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    // Limpa mensagem de erro antes da validação
     emailErro.textContent = '';
 
-    // Validação de formato
     if (!emailRegex.test(email)) {
       emailErro.textContent = 'Por favor, insira um email válido.';
       emailInput.focus();
       return;
     }
 
-    // Validação de comprimento
     if (email.length < 6 || email.length > 254) {
       emailErro.textContent = 'O email deve ter entre 6 e 254 caracteres.';
       emailInput.focus();
       return;
     }
 
-    // Se passou em tudo, envia o formulário
-    form.submit();
+    abrirModal(); // mostra modal de obrigado
+    form.submit(); // envia apenas se passar na validação
   });
 
-  // Remove mensagem de erro quando o usuário digita algo
   emailInput.addEventListener('input', () => {
     emailErro.textContent = '';
   });
 }
+
 
