@@ -2,25 +2,36 @@
   "title": "Automação Financeira em Nuvem",
   "icon": "",
   "subtitle": "Gestão prática e segura de planilhas empresariais.",
-  
+
   "features": [
     "Integração entre planilhas de entrada e financeiro",
     "Relatórios automáticos de pagamentos e envios",
     "Controle de acesso exclusivo ao dono",
     "Compatível com Mac e Windows",
-    "Envio de alertas por e-mail empresarial"
+    "Envio de alertas por e-mail empresarial",
+    "Filtros e relatórios de pendências e status",
+    "Dashboard com visão geral das movimentações"
   ],
 
-  "description": "Automação que conecta planilhas no Google Drive, organiza dados financeiros e gera relatórios claros e confiáveis. Ideal para empresas que buscam agilidade e segurança na gestão.",
-  
+  "description": "A Automação Financeira da DaniSoft Web foi desenvolvida para empresas que desejam organizar seus dados em nuvem, reduzir falhas de controle e ganhar agilidade na gestão. Com integração entre planilhas, relatórios automáticos e envio de alertas, você tem clareza e segurança para tomar decisões.\n\nIdeal para escritórios, consultorias, prestadores de serviços e qualquer negócio que precise controlar entradas, pagamentos e notas fiscais.\n\nConfira no vídeo abaixo como a automação funciona na prática.",
+
+  "documentation": [
+    "Manual do usuário com instruções detalhadas",
+    "15 dias de manutenção e ajustes grátis",
+    "Documentação técnica para administradores",
+    "Execução somente após aprovação do cliente",
+    "Tutoriais em vídeo para treinamento da equipe"
+  ],
+
   "benefits": [
     "Mais clareza no controle financeiro",
     "Economia de tempo com processos automatizados",
     "Segurança de dados com acesso restrito",
-    "Relatórios prontos para tomada de decisão"
+    "Relatórios prontos para tomada de decisão",
+    "Integração com e-mail empresarial"
   ],
 
-  "price": "Projetos a partir de R$: 400,00. Valores sob consulta conforme necessidade.",
+  "price": "Projetos a partir de R$: 300,00. Consulte valores personalizados conforme a necessidade da sua empresa",
 
   "paymentMethods": [
     "Pix",
@@ -29,9 +40,7 @@
     "Transferência bancária"
   ],
 
-   "videoDemo": "link-do-video.mp4",
+  "videoDemo": "link-do-video.mp4",
 
-  "callToAction": "Gostou da ideia? Solicite um orçamento e tenha sua Automação Financeira exclusiva para o seu negócio."
+  "callToAction": "Gostou da ideia? Solicite um orçamento e tenha sua Automação Financeira exclusiva com a cara do seu negócio. Transforme sua gestão com a DaniSoft Web."
 }
-
- 
