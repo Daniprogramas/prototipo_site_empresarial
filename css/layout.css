@@ -162,13 +162,13 @@ footer .social-links a {
   z-index: 9999;     /* fica acima de outros elementos */
 }
 #whatsapp-button img {
-  width: 200px;       /* tamanho padrão para desktop */
+  width: 250px;       /* tamanho padrão para desktop */
   height: auto;       /* mantém proporção */
   transition: transform 0.3s ease;
 }
 
 #whatsapp-button img {
-  width: 200px;       /* aumenta a largura */
+  width: 250px;       /* aumenta a largura */
   height: auto;       /* mantém proporção da boneca */
   display: block;     /* garante que o tamanho seja aplicado */
   transition: transform 0.3s ease;
