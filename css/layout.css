@@ -156,10 +156,8 @@ footer .social-links a {
 }
 
  #whatsapp-button img {
-  width: 120px;       /* aumenta a largura */
-  height: auto;       /* mantém proporção da imagem */
-  border-radius: 0;   /* remove arredondamento, já que não é ícone */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* sombra para destacar */
+  width: 150px;       /* tamanho ideal para boneca */
+  height: auto;       /* mantém proporção */
   transition: transform 0.3s ease;
 }
 
@@ -169,5 +167,7 @@ footer .social-links a {
 
 #whatsapp-button img:active {
   transform: scale(1.2); /* cresce 20% ao clicar */
+}
+1.2); /* cresce 20% ao clicar */
 }
 
