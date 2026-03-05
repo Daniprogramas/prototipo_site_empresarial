@@ -59,23 +59,16 @@ nav a:hover {
   font-size: 24px;
   cursor: pointer;
   z-index
-/* Boneca (desktop) */
-#whatsapp-button img {
-  width: 200px;   /* tamanho ideal para leitura */
-  height: auto;   /* mantém proporção */
-  transition: transform 0.3s ease;
-}
-
 /* Telas médias (tablets) */
 @media (max-width: 768px) {
   #whatsapp-button img {
-    width: 160px; /* reduz um pouco */
+    width: 160px;    /* reduz um pouco */
   }
 }
 
 /* Telas pequenas (celulares) */
 @media (max-width: 480px) {
   #whatsapp-button img {
-    width: 120px; /* menor para caber na tela */
+    width: 120px;    /* menor para caber na tela */
   }
 }
