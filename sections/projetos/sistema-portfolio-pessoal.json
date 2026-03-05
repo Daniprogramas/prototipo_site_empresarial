@@ -1,36 +1,37 @@
 {
-  "title": "Portfólio Pessoal",
+  "title": "Site Institucional",
   "icon": "",
-  "subtitle": "Mostre seus projetos, habilidades e conquistas\nem uma página moderna e profissional.",
+  "subtitle": "Apresente sua empresa de forma moderna,\nprofissional e integrada ao mundo digital.",
 
   "features": [
-    "Layout responsivo e elegante para desktop e mobile",
-    "Seções para apresentação pessoal, projetos e experiências",
-    "Galeria de imagens ou vídeos dos trabalhos realizados",
-    "Formulário de contato integrado para oportunidades",
-    "Estrutura em HTML e CSS com boas práticas de SEO",
-    "Código simples e fácil de personalizar",
-    "Hospedagem em qualquer servidor web"
+    "Página inicial com destaque para marca e slogan",
+    "Seção 'Sobre Nós' com missão, visão e valores",
+    "Catálogo de serviços e produtos com descrições detalhadas",
+    "Formulário de contato integrado para orçamentos e dúvidas",
+    "Links diretos para redes sociais e plataformas profissionais",
+    "Galeria de fotos e vídeos institucionais",
+    "Modo claro e escuro para melhor experiência",
+    "Layout totalmente responsivo para desktop e mobile"
   ],
 
   "documentation": [
-    "Guia de instalação e publicação incluso",
-    "Manual de personalização de conteúdo e cores",
-    "7 dias de suporte gratuito para ajustes",
+    "Manual de uso e navegação incluso",
+    "Guia de integração com redes sociais",
+    "15 dias de suporte gratuito para ajustes",
     "Entrega somente após validação do cliente"
   ],
 
-  "description": "O Portfólio Pessoal foi desenvolvido para profissionais que desejam destacar suas habilidades e projetos de forma organizada e impactante. Com design moderno e responsivo, ele inclui seções para apresentação pessoal, experiências, galeria de trabalhos e formulário de contato. O projeto é entregue com manual de uso, guia de instalação e suporte inicial, garantindo praticidade e credibilidade.",
+  "description": "O Site Institucional foi desenvolvido para empresas que desejam fortalecer sua presença digital e transmitir credibilidade. Com design moderno e responsivo, ele inclui seções para apresentação da empresa, catálogo de serviços, formulário de contato e integrações com redes sociais. O projeto é entregue com manual de uso, guia de integração e suporte inicial, garantindo praticidade e confiança.",
 
   "benefits": [
-    "Destaque profissional com apresentação organizada",
-    "Maior visibilidade para seus projetos e conquistas",
-    "Layout moderno e responsivo",
-    "Facilidade de personalização para diferentes áreas",
-    "Transparência e segurança com validação prévia"
+    "Maior visibilidade e presença digital",
+    "Organização clara das informações institucionais",
+    "Integração direta com redes sociais e contatos",
+    "Layout moderno e responsivo para qualquer dispositivo",
+    "Transparência e confiança com validação prévia"
   ],
 
-  "price": "Portfólios a partir de R$: 180,00. Consulte valores personalizados conforme a necessidade do seu perfil",
+  "price": "Sites institucionais a partir de R$: 500,00. Consulte valores personalizados conforme a necessidade da sua empresa",
 
   "paymentMethods": [
     "Pix",
@@ -41,5 +42,5 @@
 
   "videoDemo": "video-demo-portfolio.mp4",
 
-  "callToAction": "Gostou da solução? Solicite um orçamento e tenha um portfólio exclusivo para destacar sua trajetória profissional."
+  "callToAction": "Gostou da solução? Solicite um orçamento e tenha um site institucional exclusivo para destacar sua empresa com profissionalismo."
 }
