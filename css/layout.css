@@ -155,18 +155,26 @@ footer .social-links a {
   z-index: 10000;
 }
 
- #whatsapp-button img {
-  width: 150px;       /* tamanho ideal para boneca */
-  height: auto;       /* mantém proporção */
+ #whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#whatsapp-button img {
+  width: 180px;       /* aumenta a largura */
+  height: auto;       /* mantém proporção da boneca */
+  display: block;     /* garante que o tamanho seja aplicado */
   transition: transform 0.3s ease;
 }
 
 #whatsapp-button img:hover {
-  transform: scale(1.1); /* cresce 10% ao passar o mouse */
+  transform: scale(1.1); /* cresce ao passar o mouse */
 }
 
 #whatsapp-button img:active {
-  transform: scale(1.2); /* cresce 20% ao clicar */
+  transform: scale(1.2); /* cresce mais ao clicar */
 }
 
 
