@@ -154,7 +154,13 @@ footer .social-links a {
   cursor: pointer;
   z-index: 10000;
 }
-
+/* Container do botão */
+#whatsapp-button {
+  position: fixed;   /* mantém fixo na tela */
+  bottom: 20px;      /* distância da borda inferior */
+  right: 20px;       /* distância da borda direita */
+  z-index: 9999;     /* fica acima de outros elementos */
+}
 #whatsapp-button img {
   width: 200px;       /* tamanho padrão para desktop */
   height: auto;       /* mantém proporção */
