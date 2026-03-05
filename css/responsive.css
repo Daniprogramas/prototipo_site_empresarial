@@ -59,6 +59,23 @@ nav a:hover {
   font-size: 24px;
   cursor: pointer;
   z-index
+/* Container do botão */
+
+}
+#whatsapp-button {
+  position: fixed;   /* mantém fixo na tela */
+  bottom: 20px;      /* distância da borda inferior */
+  right: 20px;       /* distância da borda direita */
+  z-index: 9999;     /* fica acima de outros elementos */
+}
+
+/* Boneca (desktop) */
+#whatsapp-button img {
+  width: 200px;      /* tamanho ideal para desktop */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
 /* Telas médias (tablets) */
 @media (max-width: 768px) {
   #whatsapp-button img {
