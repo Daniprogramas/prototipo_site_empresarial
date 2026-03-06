@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const card = params.get("card");
 
   // Caminho base centralizado
-  const BASE_PATH = "/prototipo_site_empresarial/sections";
+  const BASE_PATH = "/sections";
 
   fetch(`${BASE_PATH}/projetos/${card}.json`)
     .then((res) => res.json())
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${data.callToAction}</p>
         <a href="#" class="cta-btn" onclick="window.open('https://wa.me/5584988731638?text=Olá,%20vim%20do%20site%20e%20verifiquei%20os%20projetos.%20Gostaria%20de%20obter%20mais%20informações.','_blank')"">Solicitar orçamento</a>
 
-        <a class="back-btn" onclick="window.location.href='/prototipo_site_empresarial/index.html'">← Voltar</a>
+        <a class="back-btn" onclick="window.location.href='/index.html'">← Voltar</a>
       `;
     });
 
@@ -94,7 +94,7 @@ function mostrarContato() {
     return;
   }
 
-  fetch("/prototipo_site_empresarial/sections/contato.html")
+  fetch("/sections/contato.html")
     .then(res => res.text())
     .then(html => {
       const tempDiv = document.createElement("div");
