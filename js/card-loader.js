@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const card = params.get("card");
 
   // Caminho base centralizado
-  const BASE_PATH = "..";
+  const BASE_PATH = "/sections";
 
   fetch(`${BASE_PATH}/projetos/${card}.json`)
     .then((res) => res.json())
