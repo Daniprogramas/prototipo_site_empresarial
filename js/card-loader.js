@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Caminho base centralizado
   const BASE_PATH = "/sections";
 
-  fetch(`${BASE_PATH}/projetos/${card}.json`)
+  fetch(`/sections/projetos/${card}.json`)
     .then((res) => res.json())
     .then((data) => {
       document.getElementById("page-title").textContent = `${data.title} | DaniSoft Web`;
