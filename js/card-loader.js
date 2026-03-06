@@ -5,8 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Caminho base centralizado
   const BASE_PATH = "/sections";
 
-  fetch(`/sections/projetos/${card}.json`)
-    .then((res) => res.json())
+  fetch(`${BASE_PATH}/projetos/${card}.json`)
+   .then((res) => {
+    if (!res.ok) {
+      throw new Error("JSON não encontrado");
+    }
+    return res.json();
+   })
     .then((data) => {
       document.getElementById("page-title").textContent = `${data.title} | DaniSoft Web`;
       document.getElementById("card-title").textContent = data.icon + " " + data.title;
